@@ -1,0 +1,244 @@
+{
+  "main": {
+    "id": "0444a38d5357cdbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "abd4f02e52cd1b5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d91b3955619612d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Finance System/PFS - Master Prompt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PFS - Master Prompt"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "99a685f1e4b4d707",
+    "type": "split",
+    "children": [
+      {
+        "id": "fefbebd5863dd5e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a72d6ce919cb69b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ae0193c6a3de1a8f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "846b65bea1dea9e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7868495ef826693a",
+    "type": "split",
+    "children": [
+      {
+        "id": "78e9339026afa1aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30c722bc934d8d89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "16ddfe7248be6dcc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "fd92efac785c3638",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7852fcea085f75df",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c87ed1eb5b5f4841",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "768d708d9b3181c4",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "d8364ea42d1973b4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 558.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "d8364ea42d1973b4",
+  "lastOpenFiles": [
+    "Projects/Finance System/PFS - Technical Plan.md",
+    "Homelab/Homelab - Ansible Automation.md",
+    "Untitled.canvas",
+    "Homelab/Homelab - Services.md",
+    "Homelab/Homelab - Network.md",
+    "Homelab/Homelab - Kubernetes Apps.md",
+    "Homelab/Homelab - Overview.md",
+    "Projects/Finance System/PFS - Master Prompt.md",
+    "Homelab",
+    "copilot/copilot-conversations/Personal_Finance_System_Master_Prompt@20260523_144004.md",
+    "copilot/copilot-conversations/Personal_Finance_System_Implementation@20260523_143627.md",
+    "copilot/memory/Recent Conversations.md",
+    "copilot/memory",
+    "Projects/Finance System/Personal Finance System.md",
+    "Clippings/How I Track My Money - The System That's Making Me A Millionaire.md",
+    "copilot/copilot-conversations/Findings_and_System_Summary@20260523_142308.md",
+    "Clippings/You're Automating The Wrong Layer (How 30,000 People Build AI Without Frameworks) 1.md",
+    "Clippings/You're Automating The Wrong Layer (How 30,000 People Build AI Without Frameworks).md",
+    "Clippings/Natwest - Account & Transaction  Product Documentation.md",
+    "coding.kitty/Case-Studies/Buffer Case Study.md",
+    "Clippings/Starling API Documentation.md",
+    "Clippings/Account and Transactions  Barclays API Exchange.md",
+    "Clippings/Monzo API Reference.md",
+    "Clippings/Trading 212 Public API.md",
+    "Projects/Finance System",
+    "Projects",
+    "Clippings/Web challenge with prizes.md",
+    "coding.kitty/Case-Studies/Buffer Case Study - Copy.md",
+    "Clippings",
+    "Clips",
+    "coding.kitty/Scripts Preps/Aikido/Aikido's Device Protection.md",
+    "coding.kitty/Hackathon/2026/sponsors/email-trails/Aikido Email Trail.md",
+    "coding.kitty/Hackathon/2026/sponsors/email-trails",
+    "INV-2026-0047.pdf",
+    "generate_invoice.py",
+    "Ideas/Random Ideas"
+  ]
+}
