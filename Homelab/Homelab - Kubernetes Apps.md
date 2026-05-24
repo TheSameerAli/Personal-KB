@@ -1,6 +1,6 @@
 ---
 title: Homelab - Kubernetes Apps
-date: 2026-05-23
+date: 2026-05-24
 tags:
   - homelab
   - kubernetes
@@ -16,95 +16,102 @@ related:
 
 ## Deployed Applications
 
-All apps run on the [[K3s]] cluster. Storage is primarily NFS-backed (`lab-storage-nfs-client`) with some apps using `local-path` for performance-sensitive data.
+All apps run on the [[K3s]] cluster. Storage is primarily NFS-backed (`lab-storage-nfs-client`) with some apps using `local-path` for performance-sensitive data. [[Longhorn]] provides distributed block storage.
 
-### Dashboard & Monitoring
+### AI & Automation
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Homarr]] | `homarr` | `ghcr.io/homarr-labs/homarr:1.43.1` | `home.nitrolab.cloud` | Home dashboard |
-| [[Uptime Kuma]] | `uptimekuma` | `louislam/uptime-kuma:latest` | `uptime.nitrolab.cloud` | Uptime monitoring |
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Hermes Agent]] | `hermes-agent` | — (internal) | AI assistant with cluster-admin, Proxmox access, and GitHub integration |
+| [[n8n]] | `n8n` | `n8n.nitrolab.cloud` / `n8n.nitro.lab` | Workflow automation |
+
+### Infrastructure
+
+| App | Namespace | Purpose |
+|-----|-----------|---------|
+| [[ArgoCD]] | `argocd` | GitOps continuous delivery |
+| [[Kubernetes Dashboard]] | `kubernetes-dashboard` | Web-based cluster management |
+| [[Longhorn]] | `longhorn-system` | Distributed block storage |
+| [[cert-manager]] | `cert-manager` | TLS certificate automation |
+| [[Tailscale]] | `tailscale` | Mesh VPN networking |
+
+### Monitoring
+
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Uptime Kuma]] | `uptimekuma` | `uptime.nitrolab.cloud` | Uptime monitoring |
 
 ### Productivity
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Nextcloud]] | `nextcloud` | `kilrah/nextcloud-ffmpeg:31.0.2` | `drive.nitro.lab` | File sync & cloud storage |
-| [[n8n]] | `n8n` | `sam78640/n8n:1.122.5-curl` | `n8n.nitrolab.cloud` | Workflow automation |
-| [[Code Server]] | `code-server` | `linuxserver/code-server:4.99.1` | `code.nitro.lab` / `code.nitrolab.cloud` | Remote VS Code |
-| [[Invoice Ninja]] | `invoiceninja` | `invoiceninja/invoiceninja:5.12.30` | `invoice.nitrolab.cloud` | Invoicing |
-| [[Browserless]] | `browserless` | `ghcr.io/browserless/chromium:latest` | `browserless.nitro.lab` | Headless Chrome API |
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Nextcloud]] | `nextcloud` | `drive.nitro.lab` | File sync & cloud storage |
 
 ### Media
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Emby]] | `media-stack` | `emby/embyserver:4.9.1.80` | `play.nitrolab.cloud` | Media server |
-| [[qBittorrent]] | `media-stack` | `lscr.io/linuxserver/qbittorrent:5.0.4` | `torrent.nitro.lab` | Torrent client (VPN via Gluetun/AirVPN) |
-| [[Prowlarr]] | `media-stack` | - | `prowlarr.nitro.lab` | Indexer manager |
-| [[Sonarr]] | `media-stack` | - | `sonarr.nitro.lab` | TV show automation |
-| [[Radarr]] | `media-stack` | - | `radarr.nitro.lab` | Movie automation |
-| [[Jellyseerr]] | `media-stack` | - | `jellyseerr.nitro.lab` / `request.nitrolab.cloud` | Media requests |
-| [[Bazarr]] | `media-stack` | - | `bazarr.nitro.lab` | Subtitle management |
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Emby]] | `media-stack` | `play.nitrolab.cloud` | Media server |
+| [[qBittorrent]] | `media-stack` | `torrent.nitro.lab` | Torrent client (VPN via Gluetun/AirVPN) |
+| [[Prowlarr]] | `media-stack` | `prowlarr.nitro.lab` | Indexer manager |
+| [[Sonarr]] | `media-stack` | `sonarr.nitro.lab` | TV show automation |
+| [[Radarr]] | `media-stack` | `radarr.nitro.lab` | Movie automation |
+| [[Jellyseerr]] | `media-stack` | `jellyseerr.nitro.lab` / `request.nitrolab.cloud` | Media requests |
+| [[Bazarr]] | `media-stack` | `bazarr.nitro.lab` | Subtitle management |
+| [[FlareSolverr]] | `media-stack` | `flaresolver.nitro.lab` | Cloudflare bypass for indexers |
 
 ### Security & Passwords
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Vaultwarden]] | `vaultwarden` | `vaultwarden/server:1.34.3` | `v.nitrolab.cloud` | Bitwarden-compatible password manager |
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Vaultwarden]] | `vaultwarden` | `v.nitrolab.cloud` | Bitwarden-compatible password manager |
 
 ### Home & IoT
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Home Assistant]] | `default` | `homeassistant/home-assistant:stable` | `ha.nitro.lab` | Smart home automation |
-| [[Frigate]] | `cctv` | `ghcr.io/blakeblackshear/frigate:stable` | `cctv.shop.nitro.lab` | NVR / CCTV with AI detection |
+| App | Namespace | Domain | Purpose |
+|-----|-----------|--------|---------|
+| [[Frigate]] | `cctv` | `cctv.shop.nitro.lab` / `cctv.shop.nitrlab.cloud` | NVR / CCTV with AI detection |
 
-### Knowledge & Reading
+### Projects
 
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Kavita]] | `kavita` | `lscr.io/linuxserver/kavita:latest` | `k.nitrolab.cloud` | Ebook / manga reader |
-| [[Obsidian LiveSync]] | `obsidian` | `couchdb:3.3` | `livesync.nitrolab.cloud` | CouchDB for Obsidian sync |
-
-### Finance
-
-| App | Namespace | Image | Domain | Purpose |
-|-----|-----------|-------|--------|---------|
-| [[Actual Budget]] | `actual` | `actualbudget/actual-server:latest` | `budget.sameerali.co.uk` | Budgeting tool |
+| App | Namespace | Purpose |
+|-----|-----------|---------|
+| [[Coding Kitty]] | `coding-kitty` | Coding Kitty project workloads |
 
 ## Databases
 
 | Database | Namespace | Image | Purpose |
 |----------|-----------|-------|---------|
-| [[PostgreSQL]] 14 | `databases` | `postgres:14.17` | Shared DB for n8n, Nextcloud, etc. |
-| [[MySQL]] 8.4 | `databases` | `mysql:8.4` | Shared DB for Invoice Ninja |
+| [[PostgreSQL]] 14 | `databases` | `postgres:14` | Shared DB for n8n, Nextcloud, etc. |
+| [[MySQL]] 8.4 | `databases` | `mysql:8.4` | Shared DB for various apps |
 
 ## VPN Sidecar Pattern
 
 Several apps route traffic through a [[Gluetun]] VPN sidecar:
 
 - **qBittorrent** — AirVPN (WireGuard)
-- **Frigate** — Custom WireGuard endpoint
 
 > [!NOTE]
-> The VPN containers use `NET_ADMIN` capability and the Gluetun image (`qmcgaw/gluetun:v3.36.0`) for provider-agnostic WireGuard tunnelling.
+> The VPN containers use `NET_ADMIN` capability and the Gluetun image for provider-agnostic WireGuard tunnelling.
 
-## Resource Allocation
+## Hermes Agent
 
-| App | CPU Request | CPU Limit | Memory Request | Memory Limit |
-|-----|-------------|-----------|----------------|--------------|
-| n8n | 1 | 4 | 4Gi | 8Gi |
-| Nextcloud | 1 | 3 | 4Gi | 8Gi |
-| Emby | 1 | 2 | 2Gi | 6Gi |
-| qBittorrent | 1 | 1 | 3Gi | 6Gi |
-| Frigate | - | 1.5 | - | 4Gi |
-| Code Server | 1 | 1 | 1Gi | 2Gi |
-| Homarr | 100m | 500m | 512Mi | 1Gi |
-| Vaultwarden | 100m | 500m | 256Mi | 512Mi |
-| Uptime Kuma | 100m | 500m | 256Mi | 512Mi |
-| Kavita | 100m | 500m | 256Mi | 512Mi |
-| Actual Budget | 100m | 500m | 256Mi | 512Mi |
+The [[Hermes Agent]] (namespace `hermes-agent`) is an AI assistant running inside the cluster with:
+
+- **Cluster-admin RBAC** — Full Kubernetes API access for self-diagnosis and pod management
+- **Proxmox API access** — VM/CT management across the 3-node Proxmox cluster
+- **GitHub access** — Push/pull to `TheSameerAli/homelab` for infrastructure-as-code sync
+- **kubectl** — CLI tool for direct cluster operations
+- **gh CLI** — GitHub CLI for repo management
+
+The agent maintains the homelab repo as a single source of truth and updates the [[Personal-KB|Obsidian knowledge base]] whenever changes are made.
+
+### Deployment
+
+- **Gateway**: `hermes-gateway` deployment
+- **Bootstrap**: Init job for first-run setup
+- **Daily Brief**: CronJob for scheduled summaries
+- **RBAC**: `kubernetes/02-security/hermes-agent/rbac.yaml` in the homelab repo
 
 ## See Also
 

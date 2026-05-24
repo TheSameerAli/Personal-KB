@@ -1,6 +1,6 @@
 ---
 title: Homelab - Ansible Automation
-date: 2026-05-23
+date: 2026-05-24
 tags:
   - homelab
   - ansible
@@ -15,7 +15,7 @@ related:
 
 ## Overview
 
-[[Ansible]] handles all bare-metal and VM provisioning for the homelab. Playbooks are organised into two categories: **management** (ongoing ops) and **deployments** (one-time setup).
+[[Ansible]] handles all bare-metal and VM provisioning for the homelab. Playbooks are organised into two categories: **management** (ongoing ops) and **deployments** (one-time setup). All playbooks live in the homelab Git repo at `github.com/TheSameerAli/homelab`.
 
 ## Playbook Structure
 
@@ -29,7 +29,7 @@ ansible/
     └── deployments/
         ├── kubernetes/
         │   ├── 01-disable-swaps/   # Pre-req: disable swap on nodes
-        │   └── 02-kubernetes-cluster/  # Full K3s HA cluster deployment
+        │   └── 02-kubernetes-cluster/  # Full K3s cluster deployment
         ├── postgres/               # Standalone PostgreSQL 16 on bare metal
         └── nfs - IMCOMPLETE/       # NFS server setup (WIP)
 ```
@@ -49,12 +49,12 @@ Configures Ubuntu 24.04 nodes with static IPs via [[Netplan]].
 
 ### K3s Cluster (02-kubernetes-cluster)
 
-Full HA [[K3s]] cluster deployment based on the community k3s-ansible project.
+Full [[K3s]] cluster deployment based on the community k3s-ansible project. Deploys a single control-plane node with 3 workers behind [[kube-vip]] for API server HA.
 
 **Roles:**
 - `prereq` — System prerequisites
 - `download` — K3s binary download
-- `k3s_server` — Master node setup with kube-vip
+- `k3s_server` — Control-plane node setup with kube-vip
 - `k3s_agent` — Worker node join
 - `k3s_server_post` — Post-install (MetalLB, Calico, or Cilium)
 - `raspberrypi` — Raspberry Pi-specific tweaks
@@ -65,13 +65,13 @@ Full HA [[K3s]] cluster deployment based on the community k3s-ansible project.
 - K3s version: `v1.30.2+k3s2`
 - SSH user: `ansibleuser`
 - CNI: Flannel (default), with Calico/Cilium options
-- VIP: kube-vip with ARP broadcasts
+- VIP: kube-vip with ARP broadcasts (API VIP: `192.168.30.222`)
 - LB: MetalLB native mode, Layer 2
 - Traefik and ServiceLB disabled (using NGINX ingress instead)
 
-**Cluster Inventory:**
-- 3 masters: `192.168.30.38-40`
-- 2 workers: `192.168.30.41-42`
+**Cluster Topology:**
+- 1 control-plane: `kube-cn1` (192.168.2.3)
+- 3 workers: `kube-wn1` (192.168.2.4), `kube-wn2` (192.168.2.160), `kube-wn3` (192.168.2.161)
 
 **Utilities:**
 - `deploy.sh` — Run the cluster deployment
@@ -91,7 +91,7 @@ Deploys [[PostgreSQL]] 16 on a bare-metal node at `192.168.2.100`.
 > [!WARNING]
 > This playbook is marked as incomplete and should not be used in its current state.
 
-Intended to set up an NFS server for shared cluster storage.
+Intended to set up an NFS server for shared cluster storage. Current NFS storage is provisioned via the `lab-storage-nfs-client` provisioner and `nfs-subdir-external-provisioner` in the `databases` namespace.
 
 ## Running Playbooks
 

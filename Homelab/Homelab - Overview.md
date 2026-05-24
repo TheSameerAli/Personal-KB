@@ -1,6 +1,6 @@
 ---
 title: Homelab - Overview
-date: 2026-05-23
+date: 2026-05-24
 tags:
   - homelab
   - infrastructure
@@ -17,7 +17,7 @@ related:
 
 ## Summary
 
-Self-hosted homelab running on [[Proxmox]] virtualisation with a [[K3s]] Kubernetes cluster as the primary workload orchestrator. Infrastructure is managed as code using [[Ansible]] for provisioning and raw Kubernetes manifests for application deployments. Backups are handled via [[Restic]] to [[Backblaze B2]].
+Self-hosted homelab running on [[Proxmox]] virtualisation with a [[K3s]] Kubernetes cluster as the primary workload orchestrator. Infrastructure is managed as code using [[Ansible]] for provisioning and raw Kubernetes manifests for application deployments. An AI assistant ([[Hermes Agent]]) runs inside the cluster with full admin access for self-diagnosis and management. Backups are handled via CronJobs inside Kubernetes with per-app backup scripts.
 
 ## Architecture
 
@@ -29,18 +29,21 @@ Self-hosted homelab running on [[Proxmox]] virtualisation with a [[K3s]] Kuberne
 │                                                         │
 │  ┌──────────┐  ┌──────────┐  ┌──────────────────────┐  │
 │  │ Proxmox  │  │ Proxmox  │  │ Proxmox (storage1)   │  │
-│  │  cn1     │  │  wn1     │  │  NFS Server          │  │
-│  │ .2.1     │  │  .2.2    │  │  .2.150 / .2.152     │  │
+│  │  cn1     │  │  wn1     │  │  NFS / Storage        │  │
+│  │ .2.1     │  │  .2.2    │  │  .2.150               │  │
 │  └────┬─────┘  └────┬─────┘  └──────────────────────┘  │
 │       │              │                                   │
 │  ┌────┴──────────────┴────────────────────────────┐     │
 │  │         K3s Cluster (v1.30.2)                  │     │
-│  │  VIP: 192.168.30.222                           │     │
+│  │  API Server VIP: 192.168.30.222                │     │
 │  │                                                │     │
-│  │  Masters: .30.38, .30.39, .30.40              │     │
-│  │  Workers: .30.41, .30.42                      │     │
+│  │  Control Plane: kube-cn1 (.2.3)               │     │
+│  │  Workers: kube-wn1 (.2.4)                     │     │
+│  │           kube-wn2 (.2.160)                    │     │
+│  │           kube-wn3 (.2.161)                    │     │
 │  │                                                │     │
 │  │  MetalLB Range: 192.168.30.80 - .30.90        │     │
+│  │  Ingress IP: 192.168.3.4                       │     │
 │  └────────────────────────────────────────────────┘     │
 │                                                         │
 │  ┌──────────┐  ┌──────────┐                             │
@@ -62,13 +65,40 @@ Self-hosted homelab running on [[Proxmox]] virtualisation with a [[K3s]] Kuberne
 ## Kubernetes Cluster
 
 - Distribution: [[K3s]] v1.30.2
-- HA: 3 master nodes with [[kube-vip]] (ARP mode)
+- HA: Single control-plane with [[kube-vip]] (ARP mode) for API server VIP
 - API Server VIP: `192.168.30.222`
-- Networking: Flannel CNI (eth0)
-- Load Balancer: [[MetalLB]] v0.14.8 (Layer 2, range `192.168.30.80-90`)
-- Ingress: NGINX Ingress Controller
-- Storage: NFS client provisioner (`lab-storage-nfs-client`) + local-path
-- TLS: [[cert-manager]] for certificate management
+- Nodes: 1 control-plane + 3 workers (Ubuntu 24.04)
+- Networking: Flannel CNI
+- Load Balancer: [[MetalLB]] (Layer 2, range `192.168.30.80-90`)
+- Ingress: NGINX Ingress Controller at `192.168.3.4`
+- Storage: NFS client provisioner + local-path provisioner + [[Longhorn]]
+- TLS: [[cert-manager]] for automated certificate management
+- GitOps: [[ArgoCD]] for declarative deployments
+- Dashboard: [[Kubernetes Dashboard]] for web-based cluster management
+- AI Assistant: [[Hermes Agent]] with cluster-admin RBAC for self-diagnosis and management
+
+## Namespaces (Active)
+
+| Namespace | Purpose |
+|---|---|
+| `argocd` | GitOps continuous delivery |
+| `cctv` | Frigate NVR |
+| `cert-manager` | TLS certificate automation |
+| `coding-kitty` | Coding Kitty project |
+| `databases` | MySQL 8.4 + PostgreSQL 14 |
+| `default` | NGINX ingress controller |
+| `hermes-agent` | Hermes AI assistant |
+| `kube-system` | CoreDNS, metrics-server, local-path |
+| `kubernetes-dashboard` | Web-based cluster dashboard |
+| `lab-storage` | Lab storage NFS provisioner |
+| `longhorn-system` | Distributed block storage |
+| `media-stack` | Emby, Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr, qBittorrent, FlareSolverr |
+| `metallb-system` | MetalLB load balancer |
+| `n8n` | Workflow automation |
+| `nextcloud` | File sync & cloud storage |
+| `tailscale` | Mesh VPN networking |
+| `uptimekuma` | Uptime monitoring |
+| `vaultwarden` | Password manager |
 
 ## Domains
 
@@ -78,31 +108,31 @@ Two domain tiers are in use:
 |------|--------|--------|
 | Internal | `*.nitro.lab` | LAN only (via [[PiHole]] DNS) |
 | Public | `*.nitrolab.cloud` | Internet-facing (via [[Wireguard]] or direct) |
-| Public | `*.sameerali.co.uk` | Personal domain |
 
-## Backup Strategy
+## Repository
 
-- Tool: [[Restic]]
-- Destination: [[Backblaze B2]]
-- Scope: Per-app backup CronJobs running inside Kubernetes
-- Apps with backups: Nextcloud, Vaultwarden, Uptime Kuma, Homarr, Kavita, n8n, Obsidian LiveSync, main Postgres, main MySQL
-
-## Repository Structure
+Infrastructure-as-code lives at `github.com/TheSameerAli/homelab`:
 
 ```
-~/code/homelab/
-├── ansible/
-│   ├── collections/          # Ansible Galaxy requirements
-│   └── playbooks/
-│       ├── management/       # IP setup, general management
-│       └── deployments/      # K3s cluster, Postgres, NFS
-├── kubernetes/
-│   ├── 01-namespaces/        # Namespace definitions
-│   ├── 02-security/          # cert-manager
-│   ├── 03-apps/              # Application deployments
-│   ├── 04-ingress/           # NGINX ingress + domain configs
-│   └── 05-databases/         # PostgreSQL 14, MySQL 8.4
-└── backups/                  # Restic initialisation scripts
+kubernetes/
+├── 01-namespaces/        # Namespace definitions
+├── 02-security/          # cert-manager + hermes-agent RBAC
+├── 03-apps/              # Application deployments
+│   ├── frigate/
+│   ├── hermes-agent/     # Gateway + bootstrap + cronjob
+│   ├── media-stack/
+│   ├── n8n/
+│   ├── nextcloud/
+│   ├── uptime-kuma/
+│   └── vault-warden/
+├── 04-ingress/           # NGINX ingress + domain configs
+│   └── controller/nginx/features/domains/
+└── 05-databases/         # PostgreSQL 14, MySQL 8.4
+ansible/
+└── playbooks/
+    ├── management/       # IP setup, general management
+    └── deployments/      # K3s cluster, Postgres, NFS (WIP)
+backups/                  # Backup scripts
 ```
 
 ## See Also
