@@ -9,6 +9,7 @@ type: note
 status: active
 related:
   - "[[Homelab - Overview]]"
+  - "[[Homelab - Network Diagram]]"
   - "[[Homelab - Services]]"
 ---
 

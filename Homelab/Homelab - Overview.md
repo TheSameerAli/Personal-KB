@@ -10,6 +10,7 @@ type: project
 status: active
 related:
   - "[[Homelab - Network]]"
+  - "[[Homelab - Network Diagram]]"
   - "[[Homelab - Services]]"
   - "[[Homelab - Kubernetes Apps]]"
   - "[[Homelab - Ansible Automation]]"
