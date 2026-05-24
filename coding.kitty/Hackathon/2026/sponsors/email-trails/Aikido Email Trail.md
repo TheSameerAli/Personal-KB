@@ -117,3 +117,37 @@ Kind regards,
 Sam,
 
 coding.kitty.
+
+---
+
+Thu, 21 May 2026 — Sophie Hammel
+
+Thanks for the quick response, Sam! I already shared your feedback internally and now need to discuss it with the team to ensure we assign the right person to support this.
+
+By when do you absolutely need all the details from us?
+
+Cheers,
+Sophie
+
+---
+
+Thu, 21 May 2026 — Sam
+
+Hi Sophie, that sounds great. Ideally, by the end of Monday we'll need the decision and which package Aikido would like to pick. Once a decision is made, we will do the paperwork and get this moving forward.
+
+Does that work for you?
+
+Kind regards,
+Sam,
+coding.kitty.
+
+---
+
+Fri, 22 May 2026 — Michiel Denis
+
+Hey Sam – That sounds great. Are you in touch with Lovable by chance already?
+
+I reached out to see if they're willing to co-sponsor, so we could have the hackathon include our Lovable/Aikido pentest.
+
+Keep you posted on that,
+Michiel

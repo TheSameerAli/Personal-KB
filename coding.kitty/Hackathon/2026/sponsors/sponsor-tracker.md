@@ -12,7 +12,7 @@ related: ["[[overview]]", "[[temporal-request]]", "[[event-schedule-calendar]]"]
 Tracking all sponsorship conversations, statuses, and next steps for [[overview|hack the kitty 2026]].
 
 > [!INFO] Last Updated
-> 20 May 2026
+> 24 May 2026
 
 ---
 
@@ -20,9 +20,9 @@ Tracking all sponsorship conversations, statuses, and next steps for [[overview|
 
 | # | Sponsor | Package | Status | Last Update |
 |---|---|---|---|---|
-| 1 | [[Aikido Security]] | TBD | Interested | 16/05/2026 |
+| 1 | [[Aikido Security]] | TBD | Interested | 22/05/2026 |
 | 2 | [[Temporal]] | Premium — $3,500 | Contract Sent | 16/05/2026 |
-| 3 | [[AWS]] | TBD | Confirmed (No Exclusivity) | 20/05/2026 |
+| 3 | [[AWS]] | TBD | Payee Onboarding In Progress | 20/05/2026 |
 | 4 | [[JetBrains]] | TBD | Awaiting Response | 12/05/2026 |
 
 ---
@@ -35,7 +35,7 @@ Tracking all sponsorship conversations, statuses, and next steps for [[overview|
 |---|---|
 | **HQ** | Germany |
 | **Office** | Silicon Valley |
-| **Status** | Interested — waiting for them to confirm details before sending contract |
+| **Status** | Interested — internal discussion ongoing; exploring possible Lovable co-sponsorship before confirming package |
 
 **Key Contacts**
 - Michiel Denis — Marketing Lead · [michiel@aikido.dev](mailto:michiel@aikido.dev)
@@ -45,13 +45,19 @@ Tracking all sponsorship conversations, statuses, and next steps for [[overview|
 > [!WARNING] Slow to reply
 > They seem interested but responses have been slow. Follow up proactively before 23 May to keep momentum ahead of the sponsor announcement post.
 
+**Latest Update — 22 May 2026**
+- Sophie said they were discussing internally who should support the hackathon and asked for the hard deadline.
+- Sam replied that Aikido's decision and package choice are ideally needed by end of Monday so paperwork can move forward.
+- Michiel then said the proposal sounds great and that he has reached out to **Lovable** about a possible **Lovable/Aikido co-sponsorship** tied to the pentest angle.
+
 **What they're providing**
 - Guest speaker for the [[event-schedule-calendar|Security Workshop]] on 2 July
 - Bonus points incentive for participants who include an Aikido scan report
 
 **Next Steps**
-- [ ] Await their confirmation on package details
-- [ ] Send contract once confirmed
+- [ ] Await Aikido's internal decision and any Lovable co-sponsorship update
+- [ ] Confirm package details once they decide how they want to proceed
+- [ ] Send contract once package is confirmed
 
 ---
 
@@ -83,22 +89,24 @@ Tracking all sponsorship conversations, statuses, and next steps for [[overview|
 
 ---
 
-### 3 · AWS — Confirmed (No Exclusivity)
+### 3 · AWS — Payee Onboarding In Progress
 
 | Field | Detail |
 |---|---|
 | **HQ** | USA |
-| **Status** | Confirmed — exclusivity requirement dropped |
+| **Status** | Sponsorship can move ahead, but payee onboarding is blocked unless AWS can use a workaround for non-entity / small-company requirements |
 
 **Key Contacts**
 - Helen Hasbun · [hasbh@amazon.com](mailto:hasbh@amazon.com)
 
 **Notes**
-AWS initially requested sole primary sponsor exclusivity. They have since agreed to remove this requirement and are happy to proceed alongside other sponsors. Package and contract details to be confirmed.
+AWS initially requested sole primary sponsor exclusivity. They later agreed to drop that requirement and said they could move ahead with the sponsorship. Helen requested payee onboarding details, but then flagged that AWS cannot onboard payees as individuals unless they are under a legal entity. Sam replied that he is registered as self-employed in the UK and has a UTR. Helen's latest update says she may have found a path forward, but it could take time and there are finance requirements around company size, including whether there are additional employees.
 
 **Next Steps**
+- [ ] Reply to Helen on the employee/company-size question
+- [ ] Confirm whether self-employed / UTR status satisfies AWS payee onboarding requirements
 - [ ] Confirm package tier and deliverables
-- [ ] Send contract
+- [ ] Clarify whether AWS will use a PO instead of a contract once onboarding is complete
 
 ---
 
@@ -143,3 +151,4 @@ JetBrains are interested but want a **hands-on collaboration** — specifically 
 - [[overview]] — Hackathon overview and judging criteria
 - [[event-schedule-calendar]] — Sessions where sponsors are involved
 - [[social-media-strategy]] — Sponsor announcement post (23 May)
+- [[AWS Email Trail]] — AWS sponsorship and payee onboarding thread

@@ -109,8 +109,10 @@ The agent maintains the homelab repo as a single source of truth and updates the
 ### Deployment
 
 - **Gateway**: `hermes-gateway` deployment
+- **Priority**: Gateway is explicitly prioritized via the `hermes-gateway-critical` PriorityClass
 - **Bootstrap**: Init job for first-run setup
 - **Daily Brief**: CronJob for scheduled summaries
+- **Web UI**: Removed to keep CPU and memory available for the gateway
 - **RBAC**: `kubernetes/02-security/hermes-agent/rbac.yaml` in the homelab repo
 
 ## See Also
