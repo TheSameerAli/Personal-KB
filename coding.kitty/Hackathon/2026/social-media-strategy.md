@@ -4,7 +4,7 @@ date: 2026-05-19
 tags: [hackathon, social-media, marketing, coding-kitty]
 type: project
 status: active
-related: ["[[overview]]", "[[sponsor-tracker]]", "[[event-schedule-calendar]]"]
+related: ["[[overview]]", "[[sponsor-tracker]]", "[[event-schedule-calendar]]", "[[Social Presence Audit - 2026-05-25]]"]
 ---
 
 # hack the kitty 2026 — Social Media Strategy
