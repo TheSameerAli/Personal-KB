@@ -9,6 +9,7 @@ related:
   - "[[Hackathon/2026/sponsors/sponsor-tracker|hack the kitty 2026 — Sponsor Tracker]]"
   - "[[Hackathon/2026/social-media-strategy|hack the kitty 2026 — Social Media Strategy]]"
   - "[[Hackathon/2026/overview|hack the kitty 2026 overview]]"
+  - "[[Sponsor Deck Outline - 2026-05-25]]"
 ---
 
 # coding.kitty — Sponsorship Inventory and Monetization Opportunities
