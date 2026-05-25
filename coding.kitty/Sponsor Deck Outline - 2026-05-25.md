@@ -291,6 +291,62 @@ Use three internal bands:
 
 This makes outreach easier when the sponsor has not shared a budget yet.
 
+### Recommended starting prices
+These are suggested **starting rates** for outbound pitching right now, based on the current public footprint and the fact that coding.kitty offers more than just a single post. These should be treated as **anchor prices**, with room to move up for stronger-fit sponsors, usage rights, or larger campaigns.
+
+#### Package A — Starter Sponsor
+**Suggested price:** **£1,500**
+
+Includes:
+- 1 sponsored short-form explainer
+- sponsor disclosure + CTA
+- basic reporting snapshot
+
+#### Package B — Growth Partner
+**Suggested price:** **£3,500**
+
+Includes:
+- 2–3 sponsored videos
+- pinned website placement during campaign window
+- optional Discord/community mention
+- campaign recap/report
+
+#### Package C — Category Partner
+**Suggested price:** **£6,500**
+
+Includes:
+- 3–5 videos around a theme
+- campaign framing / category ownership feel
+- website placement
+- Discord touchpoint
+- stronger reporting package
+
+#### Package D — Ecosystem / Hackathon Partner
+**Suggested starting price:** **from £5,000**
+
+Typical range:
+- **£5,000–£8,500** for standard ecosystem partner packages
+- **£8,500+** for broader hackathon / multi-surface / premium partner packages
+
+Includes combinations of:
+- sponsor presence on `thecodingkitty.com`
+- content placements
+- Discord activation
+- workshop / AMA / Q&A
+- challenge / prize / judging tie-in
+- campaign/event visibility across multiple surfaces
+
+### Suggested add-on pricing
+Use add-ons to protect margin instead of overstuffing base packages.
+
+- **Paid usage rights:** +30% to +100% of base package depending on term/scope
+- **Whitelisting / dark posting rights:** from **£750**
+- **Extra website placement outside campaign window:** from **£300**
+- **Discord AMA / workshop / live session:** **£750–£1,500**
+- **Extra revision round beyond normal scope:** **£250–£500**
+- **Lead magnet / custom landing page / resource tie-in:** from **£500**
+- **Exclusivity by category/time window:** premium uplift, usually **+20% to +50%**
+
 ---
 
 ### Slide 11 — Proof points / reasons to believe
