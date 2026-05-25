@@ -90,6 +90,54 @@ Across platforms, the brand is highly consistent:
   - **4 supporters**
   - Support page title: **Support coding kitty**
 
+### First-party website (`thecodingkitty.com`)
+- URL: `https://thecodingkitty.com`
+- Title observed: `coding.kitty - Learn Coding with Cats`
+- Hero positioning observed:
+  - `Making complex coding concepts simple to understand, with cats.`
+  - `#hackthekitty — Hackathon 2026`
+- Site navigation observed:
+  - Home
+  - Videos
+  - Contact
+  - `#hackthekitty`
+- Public activity / inventory signals shown on homepage:
+  - **185 topics**
+  - **128 videos**
+  - **316 cats on the pinboard**
+- Community/product features visible on the site:
+  - topic suggestion / voting system
+  - Discord join CTA
+  - cat pinboard / UGC mechanic
+  - first-party video library
+- Official partners shown on the homepage:
+  - **Temporal**
+  - **Aikido**
+
+## Sponsor signals observed
+
+This account is not only sponsor-ready — there are now clear indications that sponsorship is already part of the operating model.
+
+### Publicly visible evidence
+- `thecodingkitty.com` explicitly displays an **OFFICIAL PARTNERS** section on the homepage.
+- The partners visible during this audit were:
+  - **Temporal**
+  - **Aikido**
+
+### Internal knowledge-base corroboration
+The Obsidian vault also contains related materials that support the idea that sponsor-linked content already exists:
+
+- `coding.kitty/Scripts Preps/Aikido/Supply Chain Attack.md`
+- `coding.kitty/Scripts Preps/Aikido/Aikido's Device Protection.md`
+- `coding.kitty/Scripts Preps/Temporal/Kitty codes in a Rocket.md`
+
+In addition, Sameer clarified in chat that **some videos on the channel are sponsored** and that some of those sponsors are also visible on `thecodingkitty.com`.
+
+This strongly suggests at least some videos are either:
+- directly sponsored,
+- created in partnership with sponsors,
+- or strategically aligned with sponsor relationships.
+
 ## Content themes observed
 
 Recent/publicly visible content strongly clusters around **short-form educational explainers** for technical concepts. Examples observed:
@@ -201,24 +249,27 @@ That is a strong foundation for monetization later, because the audience can be 
 
 ## Early monetization clues already visible
 
-Publicly visible signals suggest monetization has started in a lightweight way, but is still early:
+Publicly visible signals suggest monetization has moved beyond pure audience-building, even if direct fan-support conversion still looks early.
 
 ### Already present
 - **Buy Me a Coffee** exists
 - **Discord community** exists
 - **Hackathon brand extension** exists
 - **Contact email** is publicly visible for opportunities
+- **Official partners are displayed on thecodingkitty.com**
+- **Some videos appear to be sponsor-linked / partnership-linked** based on first-party site signals plus internal content-prep materials
 
 ### What this likely means
-The brand has already laid the rails for multiple monetization paths, but the public funnel still looks early-stage rather than heavily commercialized.
+The brand has already laid the rails for multiple monetization paths, and sponsorship/partner activity now looks like a real part of the model rather than just a future possibility.
 
-The clearest evidence is Buy Me a Coffee showing only **4 supporters** despite large audience numbers on Instagram/TikTok. That implies one or more of the following:
+The clearest direct-support evidence is Buy Me a Coffee showing only **4 supporters** despite large audience numbers on Instagram/TikTok. That implies one or more of the following:
 
-- audience is large, but not yet strongly monetized
-- monetization messaging is light or secondary
+- audience is large, but direct fan monetization is still early
+- monetization messaging may be stronger around partnerships than around donations
 - the strongest audience relationship may still be entertainment/education rather than paid support
 - conversion asks may not yet be repeated enough or productized enough
 
+At the same time, the visible partner presence suggests the account may already be validating a stronger path: **brand-aligned sponsor integrations**.
 ## Editorial strategy signals
 
 ### What the account appears to optimize for
