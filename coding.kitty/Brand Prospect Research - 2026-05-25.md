@@ -31,7 +31,8 @@ Known from earlier notes and active sponsorship work:
 
 - `coding.kitty` already has visible sponsor/partner signals with [[Temporal]] and [[Aikido Security]]
 - `coding.kitty` / Sameer has also already **worked with Microsoft**
-- that means the best next step is not random outreach — it is to expand into **adjacent high-trust developer brands**
+- User update on 2026-05-25: outreach / work has already been done with **JetBrains**, **Microsoft**, and **GitHub Copilot**
+- that means the best next step is not random outreach — it is to expand into **adjacent high-trust developer brands** and deprioritize already-worked brands in the next outbound wave
 
 ## Selection logic
 
@@ -344,18 +345,133 @@ I prioritized brands that fit one or more of these content lanes:
 
 ---
 
+## 8) Atlassian
+**Priority:** Medium-high
+
+**Why it fits**
+- Atlassian is a strong developer-workflow brand with products that are easy to integrate into educational content around planning, delivery, collaboration, and engineering teamwork.
+- The product set also gives multiple possible `coding.kitty` entry points without forcing the content into a pure enterprise ad.
+
+**Best product angles for coding.kitty**
+- Jira
+- Confluence
+- Bitbucket
+- Loom
+- Rovo
+- beginner-friendly explainers on team workflows, planning, tickets, and collaboration
+
+**Public contact email**
+- `press@atlassian.com`
+
+**Contact type**
+- Press / media
+
+**Best outreach angle**
+- Pitch workflow explainers such as:
+  - what issue tracking is
+  - how dev teams go from idea to shipped feature
+  - docs + tickets + code collaboration explained simply
+
+**Official evidence / notes**
+- Atlassian’s company contact page has a dedicated Press section and the page source exposes `mailto:press@atlassian.com`.
+- The same page and footer surface product lines including Jira, Confluence, Loom, Bitbucket, and Rovo.
+
+**References**
+- Company contact: <https://www.atlassian.com/company/contact>
+- Product overview: <https://www.atlassian.com/software>
+
+---
+
+## 9) New Relic
+**Priority:** Medium-high
+
+**Why it fits**
+- New Relic is a strong fit for observability, monitoring, debugging, reliability, and "what happens after deployment" content.
+- That gives `coding.kitty` a useful adjacent lane beyond coding basics: teaching why apps break, how teams detect problems, and how developers understand systems in production.
+
+**Best product angles for coding.kitty**
+- observability basics
+- monitoring
+- performance debugging
+- logs / traces / reliability education
+- “why your app is slow” style explainers
+
+**Public contact email**
+- `PR@newrelic.com`
+
+**Contact type**
+- Press / communications
+
+**Best outreach angle**
+- Pitch explainer content around:
+  - what observability is
+  - logs vs metrics vs traces
+  - how developers debug production issues
+  - why reliability matters even for beginners
+
+**Official evidence / notes**
+- New Relic’s platform page positions it around observability.
+- The official contact page has a visible “Press Contact” mailto link for `PR@newrelic.com`.
+
+**References**
+- Platform: <https://newrelic.com/platform>
+- Contact page: <https://newrelic.com/about/contact-us>
+
+---
+
+## 10) PagerDuty
+**Priority:** Medium
+
+**Why it fits**
+- PagerDuty fits the incident response / operations / reliability side of developer education.
+- It is less obvious for beginner coding than GitHub or Postman, but it is still a high-quality brand and could work well if `coding.kitty` wants some stronger infra/ops storylines.
+
+**Best product angles for coding.kitty**
+- incident response
+- on-call explainers
+- alerting
+- operational workflows
+- what happens when production breaks
+
+**Public contact email**
+- `sales@pagerduty.com`
+
+**Contact type**
+- Sales
+
+**Best outreach angle**
+- Pitch practical explainers like:
+  - what on-call means
+  - how incident response works
+  - how engineering teams handle outages
+
+**Official evidence / notes**
+- PagerDuty’s contact page publicly lists `sales@pagerduty.com` and their Contact Sales phone route.
+- The platform positioning is oriented around real-time operations.
+
+**References**
+- Platform: <https://www.pagerduty.com/platform/>
+- Contact page: <https://www.pagerduty.com/contact-us/>
+
+---
+
 ## Practical ranking for outreach order
 
 ### Best first wave
-1. **Microsoft**
-2. **GitHub / GitHub Copilot**
-3. **Cloudflare**
-4. **DigitalOcean**
-5. **Postman**
+1. **Cloudflare**
+2. **DigitalOcean**
+3. **Postman**
+4. **GitLab**
+5. **Atlassian**
 
 ### Strong second wave
-6. **GitLab**
-7. **JetBrains**
+6. **New Relic**
+7. **PagerDuty**
+
+### Already worked / contacted
+- **Microsoft**
+- **GitHub / GitHub Copilot**
+- **JetBrains**
 
 ## Why these made the cut
 
@@ -382,16 +498,21 @@ Those may still be worth researching further, but I did **not** want to include 
 
 Best move is a **two-lane outreach strategy**:
 
-### Lane A — warm / adjacent
-- Microsoft
-- GitHub / GitHub Copilot
-- JetBrains
-
-### Lane B — high-fit cold outreach
+### Lane A — highest-priority fresh outreach
 - Cloudflare
 - DigitalOcean
 - Postman
 - GitLab
+- Atlassian
+
+### Lane B — strong follow-on targets
+- New Relic
+- PagerDuty
+
+### Already worked / warm history
+- Microsoft
+- GitHub / GitHub Copilot
+- JetBrains
 
 ## References
 
@@ -416,3 +537,9 @@ Best move is a **two-lane outreach strategy**:
 - <https://about.gitlab.com/press/>
 - <https://www.jetbrains.com/guide/ai/>
 - <https://www.jetbrains.com/company/contacts/>
+- <https://www.atlassian.com/company/contact>
+- <https://www.atlassian.com/software>
+- <https://newrelic.com/platform>
+- <https://newrelic.com/about/contact-us>
+- <https://www.pagerduty.com/platform/>
+- <https://www.pagerduty.com/contact-us/>
