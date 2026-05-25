@@ -4,7 +4,7 @@ date: 2026-05-19
 tags: [hackathon, sponsors, partnerships, coding-kitty]
 type: project
 status: active
-related: ["[[overview]]", "[[temporal-request]]", "[[event-schedule-calendar]]"]
+related: ["[[overview]]", "[[temporal-request]]", "[[event-schedule-calendar]]", "[[Sponsorship Inventory and Monetization Opportunities - 2026-05-25]]"]
 ---
 
 # hack the kitty 2026 — Sponsor Tracker

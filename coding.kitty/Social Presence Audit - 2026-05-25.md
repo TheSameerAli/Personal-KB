@@ -8,6 +8,7 @@ related:
   - "[[Hackathon/2026/social-media-strategy|hack the kitty 2026 — Social Media Strategy]]"
   - "[[Hackathon/2026/overview|hack the kitty 2026 overview]]"
   - "[[Case-Studies/Buffer Case Study|Buffer Case Study]]"
+  - "[[Sponsorship Inventory and Monetization Opportunities - 2026-05-25]]"
 ---
 
 # coding.kitty — Social Presence Audit
