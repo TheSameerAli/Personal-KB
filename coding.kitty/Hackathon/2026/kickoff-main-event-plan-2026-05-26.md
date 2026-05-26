@@ -364,4 +364,4 @@ Potential next docs to create from this:
 - speaker script for Sameer
 - run-of-show for Ruhi + mods
 - Discord kickoff checklist
-- kickoff slide outline
+- [[kickoff-slide-deck-outline-2026-05-26]] — slide-by-slide kickoff deck
