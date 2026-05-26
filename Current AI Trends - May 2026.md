@@ -145,3 +145,6 @@
 - Microsoft data: AI **more expensive than human employees** (Fortune)
 - Memory now ~66% of AI chip costs (up from ~30% in 2023)
 - NVIDIA $81.6B quarter — Jensen: "In AI, compute is revenue"
+
+## Related deep-dives
+- [[Best Coding Models - 2026-05-26]]
