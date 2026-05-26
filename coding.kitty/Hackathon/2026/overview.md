@@ -186,6 +186,7 @@ Join: [discord.thecodingkitty.com](https://discord.thecodingkitty.com/)
 ## See Also
 
 - [[event-schedule-calendar]] — Full event schedule with sessions and speakers
+- [[kickoff-main-event-plan-2026-05-26]] — Virtual kickoff structure for the main event
 - [[sponsor-tracker]] — Sponsor pipeline and status
 - [[social-media-strategy]] — Content calendar and post tracker
 - [[temporal-request]] — Temporal sponsorship support document

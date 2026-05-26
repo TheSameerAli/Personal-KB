@@ -89,5 +89,6 @@ July 15  ▸ Winners announced
 ## See Also
 
 - [[overview]] — Full hackathon rules, prizes, and submission info
+- [[kickoff-main-event-plan-2026-05-26]] — Detailed plan for the 24 June kickoff
 - [[sponsor-tracker]] — Aikido and Temporal sponsor status
 - [[social-media-strategy]] — Promotion plan for each event
