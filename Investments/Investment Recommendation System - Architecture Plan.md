@@ -1,10 +1,10 @@
 # Investment Recommendation System — Architecture Plan
 
-> **Status:** Planning | **Date:** 2026-05-27 | **Decisions made:** Both UK + US real estate ✓ | Portfolio tracking ✓ | Not starting yet
+> **Status:** Planning — all decisions locked | **Date:** 2026-05-27 | **Not starting yet**
 
-**Goal:** Multi-asset investment recommendation system covering stocks, crypto, and real estate (US + UK), with portfolio tracking and a web dashboard, delivered via Telegram.
+**Goal:** Multi-asset investment recommendation system covering stocks, crypto, and real estate (US + UK), with portfolio tracking, backtesting, and a web dashboard, delivered via Telegram.
 
-**Architecture:** Hermes CronJobs on k3s → SQLite (market data + portfolio holdings) → LLM analysis engine (portfolio-aware) → FastAPI dashboard + Telegram digest.
+**Architecture:** Hermes CronJobs on k3s → SQLite (market data + portfolio holdings + recommendations + backtest results) → LLM analysis engine (portfolio-aware, preflight-checked) → FastAPI dashboard + Telegram digest.
 
 **Tech Stack:** Hermes CronJobs, Python, SQLite, FastAPI + Jinja2 + Chart.js, yfinance, CoinGecko, FRED + Zillow ZHVI, HM Land Registry + ONS UK HPI.
 
@@ -29,13 +29,15 @@
 │  │         SQLite DB             │ ← market data              │
 │  │     /opt/data/market_data.db  │    + recommendations      │
 │  │                               │    + portfolio holdings    │
+│  │                               │    + backtest results      │
 │  └────────┬──────────────┬───────┘                           │
 │           │              │                                    │
 │           ▼              ▼                                    │
 │  ┌───────────────┐  ┌──────────────────────┐                 │
 │  │  Analysis     │  │  Dashboard (FastAPI)  │ ← READ-ONLY    │
 │  │  Engine       │  │  Port 8080, k3s pod   │   web view     │
-│  │  (weekly)     │  │  + portfolio page     │                │
+│  │  + preflight  │  │  + portfolio page     │                │
+│  │  (weekly)     │  │  + accuracy card      │                │
 │  └───────┬───────┘  └──────────────────────┘                 │
 │          │                                                    │
 │  ┌───────▼───────┐                                           │
@@ -43,6 +45,12 @@
 │  │  Compiler     │ → Obsidian archival                       │
 │  │  (weekly)     │                                           │
 │  └───────────────┘                                           │
+│                                                              │
+│  ⏰ Phase 6: ┌───────────────┐                                │
+│              │  Backtesting  │ ← evaluates expired recs       │
+│              │  Engine       │   accuracy → dashboard card    │
+│              │  (weekly)     │                                │
+│              └───────────────┘                                │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -50,97 +58,68 @@
 
 ## Component 1: Data Storage
 
-### `market_data` table
-- `symbol`, `asset_class` (stock/crypto/real_estate), `metric`, `value`, `timestamp`, `metadata` (JSON)
+### `market_data` — time-series price/volume/indicator data
+### `recommendations` — LLM-generated buy/sell/hold/watch signals
+### `portfolio_holdings` — user's actual positions (manual entry v1, broker API v2)
+### `backtest_results` — recommendation accuracy tracking (Phase 6)
 
-### `recommendations` table
-- `asset`, `action` (buy/sell/hold/watch/accumulate), `confidence`, `reasoning`, `signals` (JSON), `risk_level`, `horizon_days`
-
-### `portfolio_holdings` table
-- `asset`, `asset_class`, `quantity`, `avg_cost_basis`, `currency`, `acquired_at`, `notes`, `updated_at`
-- **Populated:** Manually via dashboard form (v1), broker API (Phase 2+)
-- **Feeds:** Allocation drift analysis, opportunity scoring, diversification recommendations
-
-**Storage:** SQLite at `/opt/data/market_data.db`, WAL mode.
+All in SQLite at `/opt/data/market_data.db`, WAL mode.
 
 ---
 
 ## Component 2: Data Collectors
 
-### Stocks (Daily)
-- **Source:** `yfinance` (free)
-- **Data:** OHLC price, volume, market cap, P/E, 50/200 MA, RSI
+### Stocks (Daily, `yfinance`)
+OHLC price, volume, market cap, P/E, 50/200 MA, RSI
 
-### Crypto (Daily)
-- **Source:** CoinGecko free API
-- **Data:** Price, volume, market cap, 7d/30d change %, ATH/ATL
+### Crypto (Daily, CoinGecko)
+Price, volume, market cap, 7d/30d %, ATH/ATL, supply
 
 ### Real Estate (Weekly) — US + UK
 
-**US Pipeline:**
-- FRED API: mortgage rates, housing starts, Case-Shiller index
-- Zillow Research CSV: ZHVI by metro area
-
-**UK Pipeline:**
-- HM Land Registry: Price Paid Data CSV (every sale, ~2mo lag)
-- ONS UK HPI: Official index by region
-- Bank of England: mortgage rates, approvals
-
-```yaml
-real_estate:
-  us:
-    metros: ["New York, NY", "Austin, TX", "Miami, FL"]
-  uk:
-    regions: ["London", "South East", "North West", "Scotland"]
-    cities: ["Manchester", "Birmingham", "Edinburgh"]
-```
-
-**Note:** UK data is laggy. Analysis engine uses trend-based signals for UK.
-
-### News/Sentiment (Phase 2)
-- NewsAPI or RSS feeds — deferred
+**US:** FRED API (mortgage rates, housing starts, Case-Shiller) + Zillow ZHVI CSV
+**UK:** HM Land Registry Price Paid CSV + ONS UK HPI + Bank of England rates
+**Note:** UK data ~2mo laggy → analysis uses trend-based signals
 
 ---
 
-## Component 3: Analysis Engine (Weekly)
+## Component 3: Analysis Engine (Weekly, Sunday 6pm)
 
-LLM-powered, portfolio-aware. Runs Sunday evening:
+**Preflight check** before running:
+- Stocks fresh within 24h (72h on Monday, covering Friday)
+- Crypto fresh within 24h
+- Real estate fresh within 7 days
+- If stale → `⚠️` warning in digest + Telegram alert, but still runs
 
-1. Reads last 1-4 weeks of market data + portfolio holdings
-2. Computes quantitative signals (RSI, MAs, volume, drawdown, WoW/MoM %)
-3. Feeds into LLM with structured prompt (conservative, evidence-based, no hype)
-4. Outputs JSON recommendations → `recommendations` table
-5. Portfolio-aware outputs: allocation drift, diversification gaps, "what to buy next"
+**Analysis:** Reads market data + portfolio holdings → computes quantitative signals → LLM produces portfolio-aware recommendations → writes to `recommendations` table.
 
 ---
 
 ## Component 4: Digest & Delivery (Weekly)
 
-Markdown digest with sections:
-- Market Overview
-- Top Recommendations (stocks, crypto, real estate — US + UK)
-- Risk Alerts
-- **Portfolio Health Check** — allocation, P&L, drift alerts, diversification gaps
+Markdown digest: Market Overview · Top Recommendations · Risk Alerts · **Portfolio Health Check** (P&L, drift, diversification gaps)
 
-**Delivery:** Telegram (primary) + Obsidian archival (`Investments/Digests/`)
+**Delivery:** Telegram + Obsidian archival
 
 ---
 
 ## Component 5: Web Dashboard
 
-**Stack:** FastAPI + Jinja2 + Chart.js (no frontend build step)
+**Stack:** FastAPI + Jinja2 + Chart.js (no frontend build)
 
 | Route | Content |
 |-------|---------|
-| `/` | Overview cards, latest recommendations |
-| `/portfolio` | Holdings, live P&L, allocation pie, drift alerts, edit form |
-| `/stocks` | Watchlist with sparklines, RSI |
+| `/` | Overview cards, latest recs |
+| `/portfolio` | Holdings, live P&L, allocation pie, drift, edit form |
+| `/stocks` | Watchlist, sparklines, RSI |
 | `/crypto` | 7d/30d trends, ATH drawdown |
-| `/real-estate` | US + UK tabs, ZHVI trends, mortgage rates |
-| `/asset/<symbol>` | Price history chart, technicals, rec history |
+| `/real-estate` | US + UK tabs, ZHVI, mortgage rates |
+| `/asset/<symbol>` | Price chart, technicals, rec history |
 | `/recommendations` | Full history, filterable |
 
-**Deployment:** k3s pod mounting Hermes PVC (read-only). Internal access or Cloudflare Access.
+**Accuracy card (Phase 6):** Overall hit rate, by asset class, by confidence level
+
+**Deployment:** k3s pod, PVC mount (read-only), internal or Cloudflare Access
 
 ---
 
@@ -188,54 +167,53 @@ alerts:  # future
 
 ---
 
-## Implementation Phases
+## Component 7: Backtesting Engine (Phase 6)
 
-### Phase 1: Foundation
-- [ ] SQLite schema (market_data + recommendations + portfolio_holdings) + Python DB module
-- [ ] `investment_config.yaml` with watchlists, target allocation, UK + US regions
-- [ ] Stock data collector CronJob (daily)
-- [ ] Verify data collection
-
-### Phase 2: Crypto + Real Estate
-- [ ] Crypto data collector CronJob (daily)
-- [ ] Real estate data collector CronJob (weekly) — both US and UK pipelines
-- [ ] Verify all pipelines
-
-### Phase 3: Dashboard
-- [ ] FastAPI app + Jinja2 templates
-- [ ] Overview + Portfolio (holdings, allocation pie, P&L, edit form) + Stock detail + Crypto + Real Estate (US/UK tabs)
-- [ ] Chart.js price history
-- [ ] Dockerfile + k3s manifests, deploy
-
-### Phase 4: Analysis Engine
-- [ ] Quantitative signals + LLM prompt (portfolio-aware)
-- [ ] Analysis CronJob → recommendations table
-- [ ] Dashboard shows recommendations automatically
-
-### Phase 5: Digest & Delivery
-- [ ] Markdown digest with Portfolio Health Check
-- [ ] Telegram delivery + Obsidian archival
-- [ ] End-to-end test
-
-### Phase 6: Polish
-- [ ] Dark theme + mobile responsive
-- [ ] News/sentiment integration
-- [ ] Price drop alerts → Telegram
-- [ ] Broker API for auto-importing holdings
-- [ ] Recommendation performance tracking
+- Recommendations have 30-day horizon → expired recs checked against actual price
+- **Only scores explicit buy/sell calls** (holds/watches noted but not scored)
+- Results → `backtest_results` table → accuracy % on dashboard
+- If accuracy <50% over 90 days → "prompt review suggested" warning
+- Designed now (schema supports from Phase 1), engine built in Phase 6
 
 ---
 
-## Decisions Made
+## Implementation Phases
 
-- ✅ **UK + US real estate** — both regions. US: FRED + Zillow. UK: Land Registry + ONS HPI + BoE.
-- ✅ **Portfolio tracking** — both watchlist AND actual holdings. `portfolio_holdings` table + dashboard form.
-- ⏸️ **Not starting yet** — plan is locked, implementation deferred.
+### Phase 1: Foundation
+- SQLite schema (all 4 tables) + Python DB module
+- `investment_config.yaml`
+- Stock data collector CronJob
 
-## Still Open
+### Phase 2: Crypto + Real Estate
+- Crypto + Real Estate (US + UK) collectors
 
-- **CronJob chaining:** Fixed schedule or auto-trigger after collectors?
-- **Backtesting:** Track recommendation accuracy?
+### Phase 3: Dashboard
+- FastAPI + Jinja2 + Chart.js, all pages, k3s deploy
+
+### Phase 4: Analysis Engine
+- Quantitative signals + LLM prompt + preflight check
+- Analysis CronJob → recommendations table
+
+### Phase 5: Digest & Delivery
+- Markdown digest + Portfolio Health Check
+- Telegram delivery + Obsidian archival
+
+### Phase 6: Polish
+- Dark theme, mobile, news/sentiment, price alerts
+- Backtesting engine + accuracy dashboard card
+- Broker API, prompt tuning
+
+---
+
+## Decisions — All Locked
+
+| # | Question | Decision |
+|---|----------|----------|
+| 1 | Portfolio tracking? | ✅ Both watchlist + actual holdings |
+| 2 | UK real estate? | ✅ Both US + UK pipelines |
+| 3 | CronJob chaining? | ✅ Fixed schedule + preflight freshness check with stale-data warnings |
+| 4 | Backtesting? | ✅ Lightweight, buy/sell only, Phase 6, schema supports from day 1 |
+| 5 | Broker API? | ⏸️ Phase 2+, manual entry for v1 |
 
 ---
 
@@ -243,23 +221,21 @@ alerts:  # future
 
 | Risk | Mitigation |
 |------|------------|
-| yfinance API breaks | Community-maintained; fallback to Alpha Vantage |
-| CoinGecko rate limits | 2s delay between calls; CoinMarketCap fallback |
-| UK data is laggy (2mo) | Analysis engine uses trend-based signals for UK real estate |
-| LLM hallucinates financial advice | Prompt rules: cite data, flag uncertainty, mandatory disclaimer |
-| CronJob failures | Telegram failure alerts |
-| SQLite corruption | Periodic R2 backups |
-| SQLite lock contention | WAL mode; cron-scheduled writes |
-| Dashboard can't reach DB | Same PVC mount |
-| Dashboard exposed | Internal-only by default; Cloudflare Access if external |
+| yfinance breaks | Community-maintained; Alpha Vantage fallback |
+| CoinGecko rate limits | 2s delay; CoinMarketCap fallback |
+| UK data laggy | Trend-based signals for UK real estate |
+| LLM hallucinates | Cite data, flag uncertainty, disclaimer |
+| CronJob failures | Telegram alerts |
+| SQLite corruption | R2 backups |
+| Lock contention | WAL mode; cron-scheduled writes |
+| Dashboard exposed | Internal-only; Cloudflare Access if needed |
 
 ---
 
 ## ⚠️ Disclaimer
 
-This is an automated system powered by AI. **Not financial advice.** Do your own research before making investment decisions. Past performance ≠ future results.
+This is an automated system powered by AI. **Not financial advice.** Do your own research. Past performance ≠ future results.
 
 ---
 
 *Linked from: [[Current AI Trends - May 2026]]*
-*Hermes plan: `.hermes/plans/2026-05-27_000000-investment-recommendation-system.md`*
