@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "abd4f02e52cd1b5a",
+        "id": "ca964f543b507c68",
         "type": "tabs",
         "children": [
           {
-            "id": "d91b3955619612d4",
+            "id": "a4fffaee8e071be4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Finance System/PFS - Master Prompt.md",
+                "file": "coding.kitty/Outreach/Email Drafts/InfoSec Conference Follow-up Drafts - 2026-06-07.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PFS - Master Prompt"
+              "title": "InfoSec Conference Follow-up Drafts - 2026-06-07"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#hackthekitty",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,7 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 558.5
+    "width": 375.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,43 +202,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d8364ea42d1973b4",
+  "active": "a4fffaee8e071be4",
   "lastOpenFiles": [
-    "Projects/Finance System/PFS - Technical Plan.md",
-    "Homelab/Homelab - Ansible Automation.md",
-    "Untitled.canvas",
-    "Homelab/Homelab - Services.md",
-    "Homelab/Homelab - Network.md",
-    "Homelab/Homelab - Kubernetes Apps.md",
-    "Homelab/Homelab - Overview.md",
-    "Projects/Finance System/PFS - Master Prompt.md",
-    "Homelab",
-    "copilot/copilot-conversations/Personal_Finance_System_Master_Prompt@20260523_144004.md",
-    "copilot/copilot-conversations/Personal_Finance_System_Implementation@20260523_143627.md",
-    "copilot/memory/Recent Conversations.md",
-    "copilot/memory",
-    "Projects/Finance System/Personal Finance System.md",
-    "Clippings/How I Track My Money - The System That's Making Me A Millionaire.md",
-    "copilot/copilot-conversations/Findings_and_System_Summary@20260523_142308.md",
-    "Clippings/You're Automating The Wrong Layer (How 30,000 People Build AI Without Frameworks) 1.md",
-    "Clippings/You're Automating The Wrong Layer (How 30,000 People Build AI Without Frameworks).md",
-    "Clippings/Natwest - Account & Transaction  Product Documentation.md",
+    "coding.kitty/Outreach/Email Drafts/Atlassian Outreach Email Draft - 2026-05-25.md",
+    "coding.kitty/Outreach/Email Drafts/InfoSec Conference Follow-up Drafts - 2026-06-07.md",
+    "Evening Check-ins/2026/2026-06-06 End-of-Day Journal.md",
+    "Daily Briefings/2026/2026-06-07 Daily Briefing.md",
+    "Daily Briefings/2026/2026-06-06 Daily Briefing.md",
+    "Daily Briefings/2026/2026-06-05 Daily Briefing.md",
+    "Daily Briefings/2026/2026-06-04 Daily Briefing.md",
+    "Evening Check-ins/2026/2026-06-05 Evening Check-in.md",
+    "Evening Check-ins/2026/2026-06-04 Evening Check-in.md",
+    "Evening Check-ins/2026",
+    "Evening Check-ins",
+    "Ideas/Product Ideas/Software/Ecommerce Management System.md",
+    "Daily Briefings/2026",
+    "Daily Briefings",
+    "Ideas/Product Ideas/Software/AI & Tech Market Gaps 2026.md",
+    "Ideas/Product Ideas/Software/Invoice Generation for AI Agents.md",
+    "Ideas/Random Ideas/Video Page Enhancement.md",
+    "Fintech SaaS Ideas.md",
+    "Homelab/Hermes Multi-Agent Architecture Plan.md",
+    "Investments/Investments.md",
+    "Investments/Investment Recommendation System - Architecture Plan.md",
     "coding.kitty/Case-Studies/Buffer Case Study.md",
-    "Clippings/Starling API Documentation.md",
-    "Clippings/Account and Transactions  Barclays API Exchange.md",
-    "Clippings/Monzo API Reference.md",
-    "Clippings/Trading 212 Public API.md",
-    "Projects/Finance System",
-    "Projects",
-    "Clippings/Web challenge with prizes.md",
-    "coding.kitty/Case-Studies/Buffer Case Study - Copy.md",
-    "Clippings",
-    "Clips",
-    "coding.kitty/Scripts Preps/Aikido/Aikido's Device Protection.md",
-    "coding.kitty/Hackathon/2026/sponsors/email-trails/Aikido Email Trail.md",
-    "coding.kitty/Hackathon/2026/sponsors/email-trails",
-    "INV-2026-0047.pdf",
-    "generate_invoice.py",
-    "Ideas/Random Ideas"
+    "Investments",
+    "AI Research Labs.md",
+    "Top AI People on X.md",
+    "coding.kitty/Sponsor Deck Outline - 2026-05-25.md",
+    "coding.kitty/Hackathon/2026/kickoff-slide-deck-outline-2026-05-26.md",
+    "coding.kitty/Hackathon/2026/kickoff-main-event-plan-2026-05-26.md",
+    "coding.kitty/Hackathon/2026/artifacts/hackthekitty-kickoff-deck-2026-05-26.pptx",
+    "coding.kitty/Hackathon/2026/artifacts",
+    "Best Coding Models - 2026-05-26.md",
+    "coding.kitty/Brand Prospect Research - 2026-05-25.md",
+    "Homelab/Homelab - Network Diagram.md",
+    "coding.kitty/Outreach/Email Drafts",
+    "coding.kitty/Outreach",
+    "Untitled.canvas",
+    "Homelab"
   ]
 }
