@@ -52,9 +52,9 @@ I thought Hornet Security could be interesting because your work around Microsof
 
 Would you be open to a quick 20-minute chat sometime next week to see if there is a collaboration angle worth exploring?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -79,9 +79,9 @@ Hornet Security feels like it could be a good fit because Microsoft 365 security
 
 Would you be able to point me to the right person on your marketing, communications, or partnerships team to explore this?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -107,9 +107,9 @@ Given your technical marketing work at Bitdefender, I thought there could be an 
 
 Would you be open to a short call next week to see if there is a useful collaboration idea here?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -134,9 +134,9 @@ Because your work is close to field marketing, I thought there might be a good f
 
 Would you be open to a quick chat, or is there someone on the campaigns or partnerships side at Qualys you think I should speak with?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -163,9 +163,9 @@ Binalyze feels like a really interesting fit because incident response, forensic
 
 Would you be up for a 20-minute call next week to brainstorm a few collaboration angles?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -191,9 +191,9 @@ Black Duck stood out to me because software supply chain security, open-source r
 
 Would you be open to a quick call to explore whether there is a campaign or educational content idea worth shaping together?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -218,9 +218,9 @@ Intel 471's work around cyber threat intelligence feels like it could lend itsel
 
 Would you be open to a short call, or could you point me to the right person on the marketing or partnerships side to explore this?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -246,9 +246,9 @@ Given your focus on risk strategy at Panorays, I thought there could be a strong
 
 Would you be open to a short call to explore whether there is a collaboration idea that would make sense for Panorays?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -273,9 +273,9 @@ Zero Networks feels like a great candidate for this kind of educational collabor
 
 Would you be open to a quick chat next week to explore whether there might be a collaboration angle here?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -300,9 +300,9 @@ DigiCert feels like a strong fit because digital trust, TLS/SSL certificates, PK
 
 Would you be open to a short call to explore whether there is a useful collaboration angle for DigiCert?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -327,9 +327,9 @@ Given your role in content, I thought Proton could be especially interesting. Pr
 
 Would you be open to a quick call to brainstorm whether there is a collaboration idea worth exploring?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
@@ -355,9 +355,9 @@ BlinkOps feels like a very natural fit because security automation, no-code work
 
 Would you be open to a 20-minute call next week to explore a possible collaboration?
 
-Best,  
-Sameer  
-coding.kitty  
+Kind regards,  
+Sam,  
+coding.kitty.  
 https://thecodingkitty.com
 
 ---
