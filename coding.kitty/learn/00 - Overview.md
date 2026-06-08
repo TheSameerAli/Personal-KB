@@ -19,6 +19,7 @@ Planning notes:
 - [[Product/Product Vision|Product Vision]]
 - [[Product/Idea-to-Course Engine|Idea-to-Course Engine]]
 - [[Product/MVP Scope|MVP Scope]]
+- [[Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]]
 - [[Curriculum/Learning Path|Learning Path]]
 - [[Research/Market Research|Market Research]]
 - [[Strategy/Business Plan|Business Plan]]

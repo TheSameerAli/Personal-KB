@@ -30,6 +30,7 @@ coding.kitty/learn should ask what the learner wants to build, diagnose the proj
 - [[Product/Product Vision|Product Vision]]
 - [[Product/Idea-to-Course Engine|Idea-to-Course Engine]]
 - [[Product/MVP Scope|MVP Scope]]
+- [[Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]]
 - [[Product/Platform Experience|Platform Experience]]
 - [[Product/Feature Ideas|Feature Ideas]]
 
