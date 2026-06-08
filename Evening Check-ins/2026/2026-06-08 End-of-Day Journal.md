@@ -1,7 +1,7 @@
 ---
 type: end-of-day-journal
 date: 2026-06-08
-generated_at: 2026-06-08T20:30:20.413691+01:00
+generated_at: 2026-06-08T20:30:45.817307+01:00
 tags:
   - end-of-day-journal
   - archive
@@ -12,38 +12,31 @@ tags:
 **🌙 End-of-Day Journal — Monday, 08 June 2026**
 
 **📅 What Happened Today**
-- 13:30–14:00 — **#hackthekitty Judging** (Google Calendar)
+- **13:30-14:00** — #hackthekitty Judging (Google Calendar)
 
 **✅ Completed Tasks**
-- ⚪p4 — Registration Survey for Hackathon (completed 11:56) — [Todoist](https://todoist.com/app/task/6gphrM5pChGj7jmQ)
-- ⚪p4 — Sort out the judging panel (completed 11:56) — [Todoist](https://todoist.com/app/task/6gphrMgjf7mmrW2x) — linked to #hackthekitty Judging event
-- ⚪p4 — Meeting with Phillipe for Hackathon Judging (completed 12:51) — [Todoist](https://todoist.com/app/task/6gpgxCcp4jQw48HQ) — linked to #hackthekitty Judging event
-- ⚪p4 — Announce Hackathon prizes (completed 12:51) — [Todoist](https://todoist.com/app/task/6gmWJQg2CmcWgJ9x)
-- ⚪p4 — Align with Aikido on session (completed 12:51) — [Todoist](https://todoist.com/app/task/6gpGMp3Qf36cGJjx)
+- **⚪p4** Registration Survey for Hackathon (11:56) — [Todoist](https://todoist.com/app/task/6gphrM5pChGj7jmQ)
+- **⚪p4** Sort out the judging panel (11:56) — linked to the 13:30 #hackthekitty Judging event — [Todoist](https://todoist.com/app/task/6gphrMgjf7mmrW2x)
+- **⚪p4** Meeting with Phillipe for Hackathon Judging (12:51) — linked to the 13:30 #hackthekitty Judging event — [Todoist](https://todoist.com/app/task/6gpgxCcp4jQw48HQ)
+- **⚪p4** Announce Hackathon prizes (12:51) — [Todoist](https://todoist.com/app/task/6gmWJQg2CmcWgJ9x)
+- **⚪p4** Align with Aikido on session (12:51) — [Todoist](https://todoist.com/app/task/6gpGMp3Qf36cGJjx)
 
 **📬 Email Replies & Actions**
-- **Replied to Trusha Sharma (Aikido)** — confirmed collab on AI pentesting/ASPM; asked for specific topics for next video.
-- **Replied to Tom Schelstraete (Aikido)** — acknowledged invoices forwarded to accounting (actionable: pending payment).
-- **Replied to Alex Hendy (Stride Talent)** — acknowledged opportunity, will review materials, noted busy schedule.
-
-**New inbox items:**
-- **Vladislav Tyshchenko** — Brand partnership inquiry for Practice Interview Coach (paid TikTok sponsorship)
-- **Bel Ng (Binalyze)** — Follow-up from InfoSec chat; looping in colleague Katharine for a call next week
-- **Anjum S** — Asked about online/offline conduct (unclear context)
-- **Irieyue (NetEase Youdao Ads)** — Collaboration invitation for global brand ads
-- **AWS** — Research study on AI's impact on DevOps efficiency
+- **Replied to:** Trusha Sharma (Aikido) — confirmed interest in collab on AI pentesting/ASPM video; asked for specific topics.
+- **Replied to:** Tom Schelstraete (Aikido) — acknowledged invoices forwarded to accounting. *Actionable: pending payment processing.*
+- **Replied to:** Alex Hendy (Stride Talent) — acknowledged opportunity, said you'd review materials, noted you're busy.
+- **New inbox items:** Vladislav (Practice Interview Coach) — sponsorship inquiry for TikTok; Bel Ng (Binalyze) — follow-up from InfoSec, looping in colleague; Anjum S — asking about hackathon format; Irieyue (NetEase) — collaboration invitation; AWS — research study on AI/DevOps.
 
 **⌘ GitHub Activity**
 - No commits today.
 
 **🧠 Active Projects / Open Loops**
-- **Open tasks (all due today, still pending):**
-  - 🔴p1 — Write coding.kitty scripts
-  - 🔴p1 — Think of Alternatives of video for Kiro Premium Sponsorship
-  - 🔴p1 — Align with Temporal on session
-  - 🟠p2 — Finalise the session calendar for the hackathon
-  - 🟠p2 — Create a coding.kitty Boucher brief
-- **Day load: Heavy (10/10)** — 1 event, 5 due-today tasks, 5 high-priority tasks, 7 emails. Guidance: keep tomorrow narrow.
+- **🔴p1** Write coding.kitty scripts (due today)
+- **🔴p1** Think of alternatives for Kiro Premium Sponsorship video (due today)
+- **🔴p1** Align with Temporal on session (due today)
+- **🟠p2** Finalise session calendar for hackathon (due today)
+- **🟠p2** Create coding.kitty Boucher brief (due today)
+- **Pending:** Review Stride Talent materials; respond to Bel Ng/Binalyze; consider Practice Interview Coach sponsorship.
 
 **🧰 Coverage Gaps / Tools to Add**
-- Telegram/Discord/Hermes chat conversations and ad-hoc assistant work are not yet captured. If those should be included, add a session/platform activity source to this journal job.
+- Chat conversations and ad-hoc assistant work (Telegram/Discord/Hermes) are not yet captured — add a session/platform activity source if those should be included in future briefings.
