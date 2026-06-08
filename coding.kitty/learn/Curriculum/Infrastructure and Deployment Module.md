@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Infrastructure and Deployment Module"
-tags: [coding-kitty-studio, curriculum, infrastructure, deployment]
+title: "coding.kitty/learn — Infrastructure and Deployment Module"
+tags: [coding-kitty-learn, curriculum, infrastructure, deployment]
 type: curriculum
 status: draft
 date: 2026-06-08

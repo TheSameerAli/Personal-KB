@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Market Research"
-tags: [coding-kitty-studio, market-research, research, ai-coding, vibe-coding]
+title: "coding.kitty/learn — Market Research"
+tags: [coding-kitty-learn, market-research, research, ai-coding, vibe-coding]
 type: research
 status: active
 date: 2026-06-08
@@ -11,7 +11,7 @@ last_researched: 2026-06-08
 
 ## Executive Summary
 
-Coding Kitty Studio sits in a fast-growing but unsettled market: AI-assisted software creation for people who are not traditional programmers.
+coding.kitty/learn sits in a fast-growing but unsettled market: AI-assisted software creation for people who are not traditional programmers.
 
 The market is not one clean category yet. It is split across:
 
@@ -19,20 +19,31 @@ The market is not one clean category yet. It is split across:
 - AI IDEs and coding agents for developers
 - traditional coding education platforms
 - new vibe-coding courses and cohorts
+- AI course generators and course-authoring tools
 - no-code/low-code platforms adding AI app generation
 - creator-led communities teaching tools faster than formal platforms can keep up
 
-The best opportunity is not to compete head-on with AI app builders or coding schools. The strongest product fit is a guided AI-builder learning workspace for non-technical creators, students, founders, and professionals who want to build and deploy real projects while learning enough software literacy to stay in control.
+The best opportunity is not to compete head-on with AI app builders or coding schools. The strongest product fit is a structured AI-builder learning platform for non-technical creators, students, founders, and professionals who want to build and deploy real projects while learning enough software literacy to stay in control.
 
 In short:
 
 > The market has plenty of tools and plenty of courses. The gap is a trusted, beginner-safe build companion that connects prompting, software fundamentals, version control, infrastructure, deployment, debugging, and project confidence.
 
+Updated idea-to-course interpretation:
+
+> The sharper gap is not just "teach vibe coding." It is helping a learner turn their own app idea into the right learning path, tool route, prompts, checkpoints, and deployment plan.
+
+This positions coding.kitty/learn between three markets:
+
+- AI course generators, which personalize learning content but are usually generic and not specific to shipping software.
+- Vibe-coding courses, which teach AI app building but usually follow fixed projects.
+- AI app builders, which generate apps but do not reliably teach the learner enough judgment to own the result.
+
 ## Market Thesis
 
 AI coding tools are democratizing software creation, but they are not democratizing software judgment at the same rate.
 
-This is the key gap Coding Kitty Studio can occupy.
+This is the key gap coding.kitty/learn can occupy.
 
 The tools can produce code, but non-technical builders still struggle with:
 
@@ -87,12 +98,35 @@ Coursera already has multiple vibe-coding offerings:
 - Scrimba's [Vibe Coding Essentials - Build Apps with AI Specialization](https://www.coursera.org/specializations/vibe-coding)
 - other Coursera courses for Replit, Cursor, Windsurf, product managers, and developers
 
-The Scrimba/Coursera specialization had roughly 17,797 learners shown during this research pass on 2026-06-08. Google's beginner course had roughly 2,666 learners shown during the same pass.
+The Scrimba/Coursera specialization teaches tools such as GitHub Copilot, Cursor AI, Claude Code, MCP, ChatGPT, Lovable, Bolt, v0, Windsurf, Cline, and Claude Code, with projects including a portfolio website, games, Chrome extensions, database-powered apps, mobile apps, GitHub, Netlify, HTML, CSS, and JavaScript.
+
+Google Cloud's beginner course showed 2,789 learners during the 2026-06-08 research pass. It is beginner-level, takes around 7 hours, uses Gemini/Gemini CLI, and includes website development, debugging, iteration, security, and a useful app feature.
 
 Implication:
 
 - There is already learner demand for beginner AI app-building education.
 - The category is early enough that a branded, community-oriented product can still differentiate.
+- Fixed course paths are already becoming available, so coding.kitty/learn needs a more personalized product layer.
+
+### AI course generation is emerging as a separate category
+
+Several AI learning products now promise to generate or assist course creation from prompts or source material:
+
+- Talimio says users can describe what they want to learn and generate a personalized course with structured lessons, curated content, and interactive elements.
+- Courso offers AI-assisted learning drafts and editable micro-learning structures.
+- Chelle focuses on turning source materials such as textbooks into course activities grounded in a knowledge model.
+
+Sources:
+
+- [Talimio](https://talimio.com/)
+- [Courso](https://www.courso.app/)
+- [Chelle](https://www.chelle.ai/)
+
+Implication:
+
+- Personalized course generation is no longer a novel claim by itself.
+- coding.kitty/learn should differentiate by being outcome-specific: it does not only generate a course about a topic; it generates a build path for the learner's software idea.
+- The course should be assembled from trusted Coding Kitty learning blocks to avoid generic or hallucinated AI lessons.
 
 ### AI upskilling is a broader workplace trend
 
@@ -153,7 +187,7 @@ Weaknesses:
 
 Market implication:
 
-- These tools are not just competitors. They can also become the platforms Coding Kitty Studio teaches through.
+- These tools are not just competitors. They can also become the platforms coding.kitty/learn teaches through.
 
 ### 2. AI IDEs and Developer Agents
 
@@ -185,7 +219,7 @@ Weaknesses:
 
 Market implication:
 
-- Coding Kitty Studio should help learners graduate from app builders into AI IDEs when they are ready.
+- coding.kitty/learn should help learners graduate from app builders into AI IDEs when they are ready.
 
 ### 3. Traditional Coding Education
 
@@ -217,7 +251,7 @@ Weaknesses:
 
 Market implication:
 
-- Coding Kitty Studio should not try to be a full traditional coding school first. It should teach the minimum viable software literacy needed to ship and maintain AI-built projects.
+- coding.kitty/learn should not try to be a full traditional coding school first. It should teach the minimum viable software literacy needed to ship and maintain AI-built projects.
 
 ### 4. Vibe Coding Courses and Cohorts
 
@@ -246,7 +280,7 @@ Weaknesses:
 
 Market implication:
 
-- Coding Kitty Studio needs a stronger product experience than "watch videos and follow along."
+- coding.kitty/learn needs a stronger product experience than "watch videos and follow along."
 
 ### 5. No-Code / Low-Code Platforms Adding AI
 
@@ -274,7 +308,7 @@ Weaknesses:
 
 Market implication:
 
-- These platforms show the same macro trend: people want to create software without starting as engineers. Coding Kitty Studio should teach transferable software thinking, not platform-specific button-clicking.
+- These platforms show the same macro trend: people want to create software without starting as engineers. coding.kitty/learn should teach transferable software thinking, not platform-specific button-clicking.
 
 ## How The Market Monetizes
 
@@ -334,7 +368,7 @@ Source: [Bessemer Venture Partners: The AI Pricing Playbook for Founders](https:
 
 Implication:
 
-- Coding Kitty Studio should avoid promising unlimited AI interaction unless costs are tightly controlled.
+- coding.kitty/learn should avoid promising unlimited AI interaction unless costs are tightly controlled.
 - A safer first model is content/workspace subscription plus optional review/cohort/service add-ons.
 
 ## Market Gaps
@@ -387,6 +421,16 @@ Opportunity:
 
 - Use Coding Kitty's approachable identity to make AI software creation feel less intimidating.
 
+### Gap 7: Learners want to build their idea, not the instructor's project
+
+Most courses validate demand for AI app-building education, but they still make everyone follow the same project path.
+
+Opportunity:
+
+- Let the learner's own idea drive the course.
+- Use AI to diagnose the idea, select the right project archetype, and assemble a practical path from curated content.
+- Make the course feel bespoke without having to generate every lesson from scratch.
+
 ## Recommended Product Fit
 
 The strongest fit is:
@@ -395,7 +439,11 @@ The strongest fit is:
 
 More specifically:
 
-> Coding Kitty Studio should be the beginner-safe bridge between "I used AI to generate something" and "I understand enough to ship, version, debug, and improve it."
+> coding.kitty/learn should be the beginner-safe bridge between "I used AI to generate something" and "I understand enough to ship, version, debug, and improve it."
+
+Sharper fit:
+
+> coding.kitty/learn should turn a learner's app idea into a personalized AI-building course, then guide them through prompting, reviewing, versioning, deploying, and improving the product.
 
 ## Recommended Initial Wedge
 
@@ -457,7 +505,7 @@ Avoid positioning as only:
 
 Position as:
 
-> Coding Kitty Studio helps beginners become AI-assisted software builders, from idea to deployed app.
+> coding.kitty/learn helps beginners become AI-assisted software builders, from idea to deployed app.
 
 Supporting line:
 
@@ -561,4 +609,3 @@ Mitigation:
 - [Coursera Job Skills Report 2026](https://www.coursera.org/skills-reports/job-skills/)
 - [Udemy 2026 Global Learning & Skills Trends Report](https://business.udemy.com/2026-global-learning-skills-trends-report/)
 - [Bessemer Venture Partners: The AI Pricing Playbook for Founders](https://www.bvp.com/assets/uploads/2026/02/The_AI_pricing_playbook_for_founders_Bessemer_Venture_Partners_2026.pdf)
-

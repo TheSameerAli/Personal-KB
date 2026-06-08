@@ -12,11 +12,12 @@ date: 2026-06-08
 
 Main hub:
 
-- [[Coding Kitty Studio]]
+- [[learn|coding.kitty/learn]]
 
 Planning notes:
 
 - [[Product/Product Vision|Product Vision]]
+- [[Product/Idea-to-Course Engine|Idea-to-Course Engine]]
 - [[Product/MVP Scope|MVP Scope]]
 - [[Curriculum/Learning Path|Learning Path]]
 - [[Research/Market Research|Market Research]]
@@ -37,9 +38,29 @@ Coding Kitty should teach non-technical people how to become AI-assisted softwar
 
 Vibe coding is the cultural hook, but the durable product is software creation literacy for the AI age.
 
+## Updated USP
+
+coding.kitty/learn should be an AI-first learning platform where the learner's app idea becomes the course.
+
+Instead of asking everyone to follow the same sample project, the platform should ask:
+
+> What do you want to build?
+
+Then it should generate a guided build path from a trusted library of lessons, prompts, tool recipes, checkpoints, and deployment steps.
+
+Example:
+
+> If a learner wants to build a to-do app that breaks big tasks into tiny steps, the platform should identify that they need product scoping, frontend UI, state, persistence, possibly backend/database, optional AI task breakdown, version control, deployment, and domain/infrastructure basics.
+
+This makes the product more than a course catalog. It becomes a personalized build companion.
+
 ## Core Promise
 
 Go from idea to deployed app using AI coding agents, while learning the software basics needed to stay in control.
+
+Sharper version:
+
+> Turn your app idea into a personalized AI-building course, then ship it while learning the software judgment needed to stay in control.
 
 This avoids two common problems:
 
@@ -48,17 +69,13 @@ This avoids two common problems:
 
 ## Product Positioning
 
-The platform should feel less like "another coding course" and more like a guided workspace for turning ideas into shipped software.
+The platform should feel less like "another coding course" and more like a structured learning platform for turning ideas into shipped software.
 
-Possible positioning:
+Chosen positioning:
 
-- **Coding Kitty Studio**: interactive, project-based, build-focused
-- **Coding Kitty Academy**: broader education brand, more course-like
-- **Vibe Coding by Coding Kitty**: direct and trend-aligned, useful as a course/path name
+- **coding.kitty/learn**: a structured learning platform for learning vibe coding and AI-assisted software creation through guided projects
 
-Recommended direction:
-
-> `coding.kitty` remains the media and education brand. `Coding Kitty Studio` becomes the interactive learning platform underneath it.
+> `coding.kitty` remains the media and education brand. `coding.kitty/learn` becomes the interactive learning platform underneath it.
 
 This gives the platform separation while keeping it clearly tied to the Coding Kitty brand.
 
@@ -106,6 +123,25 @@ By the end of the core path, a learner should be able to:
 - keep improving the app after the first version ships
 
 ## Curriculum Structure
+
+The curriculum should be modular rather than only linear.
+
+The platform should maintain reusable learning blocks and assemble them based on the learner's idea, route, and skill level.
+
+Core blocks:
+
+- project scoping
+- prompting and agent workflow
+- frontend
+- backend
+- database
+- authentication
+- AI/API integration
+- version control
+- infrastructure
+- deployment
+- debugging and verification
+- iteration after launch
 
 ### Phase 1: Builder Mindset
 
@@ -338,7 +374,7 @@ Build the first version around one complete guided path:
 
 The MVP should include:
 
-- Coding Kitty Studio branding
+- coding.kitty/learn branding
 - a structured lesson path
 - interactive task checklist
 - progress tracking

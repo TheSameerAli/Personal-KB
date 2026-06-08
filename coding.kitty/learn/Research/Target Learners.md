@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Target Learners"
-tags: [coding-kitty-studio, audience, learners, research]
+title: "coding.kitty/learn — Target Learners"
+tags: [coding-kitty-learn, audience, learners, research]
 type: research
 status: draft
 date: 2026-06-08

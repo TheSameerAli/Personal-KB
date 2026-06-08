@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Brand Strategy"
-tags: [coding-kitty-studio, brand, strategy]
+title: "coding.kitty/learn — Brand Strategy"
+tags: [coding-kitty-learn, brand, strategy]
 type: strategy
 status: draft
 date: 2026-06-08
@@ -12,7 +12,7 @@ date: 2026-06-08
 
 `coding.kitty` remains the media and education brand.
 
-`Coding Kitty Studio` becomes the interactive learning platform underneath it.
+`coding.kitty/learn` becomes the interactive learning platform underneath it.
 
 ## Tone
 

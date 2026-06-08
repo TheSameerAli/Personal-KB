@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Feature Ideas"
-tags: [coding-kitty-studio, features, product]
+title: "coding.kitty/learn — Feature Ideas"
+tags: [coding-kitty-learn, features, product]
 type: idea-list
 status: draft
 date: 2026-06-08
@@ -10,6 +10,10 @@ date: 2026-06-08
 
 ## Learning Features
 
+- idea intake questionnaire
+- personalized course map
+- project archetype matcher
+- concept dependency map
 - interactive project paths
 - progress tracking
 - prompt templates
@@ -20,6 +24,9 @@ date: 2026-06-08
 
 ## AI Builder Features
 
+- app idea analyzer
+- route recommender: web, mobile, automation, or not sure
+- sprint generator
 - prompt builder
 - agent task cards
 - code review prompts
@@ -44,4 +51,3 @@ date: 2026-06-08
 - templates
 - project reviews
 - cohort learning
-

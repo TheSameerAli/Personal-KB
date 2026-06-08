@@ -10,5 +10,4 @@ date: 2026-06-08
 
 This idea has been moved into its own project space:
 
-[[../../coding.kitty/Coding Kitty Studio/00 - Overview|Coding Kitty Studio]]
-
+[[coding.kitty/learn/00 - Overview|coding.kitty/learn]]

@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Monetization Strategy"
-tags: [coding-kitty-studio, monetization, strategy]
+title: "coding.kitty/learn — Monetization Strategy"
+tags: [coding-kitty-learn, monetization, strategy]
 type: strategy
 status: draft
 date: 2026-06-08
@@ -13,7 +13,8 @@ date: 2026-06-08
 ### Free Tier
 
 - intro lessons
-- personal website path
+- basic idea intake
+- one beginner project archetype path
 - basic prompt templates
 - basic progress tracking
 - community access, if desired
@@ -21,6 +22,8 @@ date: 2026-06-08
 ### Paid Tier
 
 - full project paths
+- deeper personalized course maps
+- advanced project archetypes
 - productivity app path
 - automation workflow modules
 - AI agent playbooks
@@ -46,4 +49,3 @@ date: 2026-06-08
 - annual membership
 - cohort-based premium experience
 - team or school licenses
-

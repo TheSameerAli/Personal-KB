@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Roadmap"
-tags: [coding-kitty-studio, roadmap, operations]
+title: "coding.kitty/learn — Roadmap"
+tags: [coding-kitty-learn, roadmap, operations]
 type: roadmap
 status: draft
 date: 2026-06-08
@@ -18,7 +18,7 @@ date: 2026-06-08
 
 ## Phase 1: MVP
 
-- create Coding Kitty Studio landing/entry point
+- create coding.kitty/learn landing/entry point
 - build personal website learning path
 - add progress tracking
 - add prompt templates

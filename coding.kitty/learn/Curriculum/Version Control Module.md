@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Version Control Module"
-tags: [coding-kitty-studio, curriculum, git, github, version-control]
+title: "coding.kitty/learn — Version Control Module"
+tags: [coding-kitty-learn, curriculum, git, github, version-control]
 type: curriculum
 status: draft
 date: 2026-06-08

@@ -1,6 +1,6 @@
 ---
-title: "Coding Kitty Studio — Product-Market Fit"
-tags: [coding-kitty-studio, product-market-fit, strategy, ai-coding, vibe-coding]
+title: "coding.kitty/learn — Product-Market Fit"
+tags: [coding-kitty-learn, product-market-fit, strategy, ai-coding, vibe-coding]
 type: strategy
 status: draft
 date: 2026-06-08
@@ -11,9 +11,13 @@ last_researched: 2026-06-08
 
 ## Best Product Fit
 
-Coding Kitty Studio should fit the market as:
+coding.kitty/learn should fit the market as:
 
-> A guided AI software-building workspace for non-technical people who want to build, understand, version, deploy, and improve real apps with AI.
+> A structured AI software-building learning platform for non-technical people who want to build, understand, version, deploy, and improve real apps with AI.
+
+Sharper fit after the idea-to-course direction:
+
+> An AI-first learning platform that turns a learner's own app idea into a guided build course, then helps them ship it with AI agents while learning the software judgment needed to stay in control.
 
 This is different from:
 
@@ -31,15 +35,17 @@ The product should help learners become capable AI-assisted builders, not just u
 
 Learners are already enrolling in vibe-coding courses and using AI app builders. But the market is split between platforms, courses, and creator communities.
 
-Coding Kitty Studio can unify the learner journey:
+coding.kitty/learn can unify the learner journey:
 
 > Idea → prompt → build → inspect → version → deploy → debug → improve.
+
+The new advantage is that the learner's own idea becomes the start of that journey. That makes the platform feel more like a build companion than a course library.
 
 ### 2. AI tool trust is low
 
 AI coding adoption is high, but trust remains low. This creates a need for education around verification and control.
 
-Coding Kitty Studio should sell:
+coding.kitty/learn should sell:
 
 - confidence
 - judgment
@@ -56,7 +62,7 @@ Not just:
 
 App builders are approachable but limited. AI IDEs are powerful but intimidating. Traditional coding education is thorough but slow.
 
-Coding Kitty Studio can be the bridge:
+coding.kitty/learn can be the bridge:
 
 - start with beginner-friendly platforms
 - teach essential concepts in context
@@ -112,27 +118,28 @@ Why:
 
 ### One-Line Positioning
 
-Coding Kitty Studio helps beginners build and deploy real apps with AI while learning enough software fundamentals to stay in control.
+coding.kitty/learn turns your app idea into a personalized AI-building course, then helps you build, understand, version, and deploy it.
 
 ### Landing Page Promise
 
-Go from idea to deployed app with AI-guided lessons, prompt templates, version control checkpoints, and beginner-friendly deployment walkthroughs.
+Describe the app you want to build. coding.kitty/learn creates your AI-building course with lessons, prompts, checkpoints, version control, and deployment steps tailored to your idea.
 
 ### Stronger Category Name
 
 Recommended:
 
-> AI Builder Studio
+> AI Builder Learning Platform
 
 Why:
 
 - broader than vibe coding
 - durable as the term changes
 - fits the interactive workspace concept
+- leaves room for personalized course generation
 
 Possible full positioning:
 
-> Coding Kitty Studio is an AI Builder Studio for non-technical people.
+> coding.kitty/learn is an AI Builder Learning Platform for non-technical people.
 
 ### Marketing Hook
 
@@ -140,16 +147,27 @@ Use "vibe coding" as the hook, but not as the whole category.
 
 Example:
 
-> Vibe coding is fun. Shipping safely takes a little more. Coding Kitty Studio teaches you both.
+> Vibe coding is fun. Shipping safely takes a little more. coding.kitty/learn teaches you both.
 
 ## Recommended MVP
 
 ### MVP Path
 
-Build and deploy your first personal website with AI.
+Turn your app idea into a guided AI-building course.
+
+Constrain the first version to a small number of archetypes:
+
+- personal website
+- simple productivity app
+- content/blog app
+- simple dashboard
+- lightweight AI wrapper
 
 ### MVP Must-Haves
 
+- idea intake
+- project archetype matching
+- personalized course map
 - structured lessons
 - interactive checklist
 - prompt templates
@@ -175,6 +193,14 @@ Recommended initial trio:
    Good for teaching transferable deployment and version control.
 
 Avoid making Cursor the default first tool for total beginners. Introduce Cursor as the "next level" after learners understand files, changes, and deployment.
+
+## Product Bet
+
+The main bet is not "people want another AI coding course."
+
+The main bet is:
+
+> People with app ideas are more likely to learn software concepts when those concepts are presented as the missing pieces between their idea and a shipped product.
 
 ## Product Principles
 
@@ -367,7 +393,7 @@ Why:
 
 ## Strategic Recommendation
 
-Build Coding Kitty Studio as a freemium, project-based AI Builder Studio.
+Build coding.kitty/learn as a freemium, project-based AI Builder Learning Platform.
 
 First wedge:
 
@@ -380,4 +406,3 @@ Differentiator:
 Long-term position:
 
 > The trusted learning platform for non-technical people who want to create software with AI.
-
