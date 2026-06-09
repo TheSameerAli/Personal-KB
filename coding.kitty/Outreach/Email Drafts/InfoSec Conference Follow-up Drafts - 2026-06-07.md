@@ -339,13 +339,13 @@ https://thecodingkitty.com
 **Contact:** kristen.kosich@blinkops.com  
 **LinkedIn:** https://www.linkedin.com/in/kristen-kosich-8a706463/  
 **Role:** Senior Marketing Manager  
-**Source:** InfoSec Conference
+**Source:** InfoSec Conference via colleague
 
-**Subject:** Great meeting you at InfoSec
+**Subject:** InfoSec follow-up
 
 Hi Kristen,
 
-It was great meeting you at InfoSec. I enjoyed chatting and wanted to follow up properly.
+I met one of your colleagues at InfoSec, and they kindly shared your email so I could follow up with the right person at BlinkOps.
 
 I'm Sameer, the creator of coding.kitty. It is a developer education project where I explain coding, cybersecurity, infrastructure, and software concepts through short, playful visual content for a community of 250K+ followers across platforms. The goal is to make technical ideas easier to understand, easier to remember, and more enjoyable to learn.
 

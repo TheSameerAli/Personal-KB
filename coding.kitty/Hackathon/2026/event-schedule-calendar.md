@@ -4,7 +4,7 @@ date: 2026-05-19
 tags: [hackathon, events, schedule, coding-kitty]
 type: event
 status: active
-related: ["[[overview]]", "[[sponsor-tracker]]", "[[social-media-strategy]]"]
+related: ["[[overview]]", "[[sponsor-tracker]]", "[[social-media-strategy]]", "[[angel-volunteer-mentorship-2026-06-09]]"]
 ---
 
 # hack the kitty 2026 — Event Schedule
@@ -23,6 +23,16 @@ All events run online via [[coding.kitty]] Discord. See [[overview]] for full ha
 | 1 | Wednesday | 24/06/2026 | 12:00 | 1 hr | Hackathon Update | Kick Off | [[Ruhi]] | [[Sameer Ali]] | 550 | Discord · Social · Website |
 | 2 | Monday | 29/06/2026 | 13:00 | 1 hr | Drop-In Session | Q&A | [[Sameer Ali]] | [[Temporal]] Support | 20 | Discord |
 | 3 | Thursday | 02/07/2026 | 12:30 | 45 mins | Guest Workshop | Security | [[Ruhi]] / [[Sameer Ali]] | [[Aikido Security]] | 500 | Discord · Website · Social |
+
+---
+
+## Mentor Coverage
+
+Mentor slots are still pending until the office-hours calendar is shared and availability is confirmed.
+
+| Person | Role | Coverage | Status | Notes |
+|---|---|---|---|---|
+| [[Angel]] | Volunteer mentor | Discord office hours, technical support, registration Q&A | Slot selection pending | [[angel-volunteer-mentorship-2026-06-09]] |
 
 ---
 
@@ -92,3 +102,4 @@ July 15  ▸ Winners announced
 - [[kickoff-main-event-plan-2026-05-26]] — Detailed plan for the 24 June kickoff
 - [[sponsor-tracker]] — Aikido and Temporal sponsor status
 - [[social-media-strategy]] — Promotion plan for each event
+- [[angel-volunteer-mentorship-2026-06-09]] — Angel volunteer mentorship notes and follow-ups
