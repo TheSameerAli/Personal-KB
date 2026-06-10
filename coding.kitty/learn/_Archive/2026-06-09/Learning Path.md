@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Learning Path"
 tags: [coding-kitty-learn, curriculum, learning-path]
 type: curriculum
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

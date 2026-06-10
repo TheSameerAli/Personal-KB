@@ -2,12 +2,22 @@
 title: "coding.kitty/learn — Product-Market Fit"
 tags: [coding-kitty-learn, product-market-fit, strategy, ai-coding, vibe-coding]
 type: strategy
-status: draft
+status: active
 date: 2026-06-08
 last_researched: 2026-06-08
 ---
 
 # Product-Market Fit
+
+## How To Use This Note
+
+Use this as the strategic decision note.
+
+For the fast summary, read [[coding.kitty/learn/00 - Overview|Executive Brief]]. For business model and launch channels, read [[coding.kitty/learn/Strategy/Business and GTM|Business and GTM]]. For evidence, read [[coding.kitty/learn/Research/Market Research|Market Research]] and [[coding.kitty/learn/Research/Competitor Landscape|Competitor Landscape]].
+
+## Key Takeaway
+
+The strongest fit is a project-based AI Builder Learning Platform for non-technical people who want to build and deploy real apps with AI while learning enough software judgment to stay in control.
 
 ## Best Product Fit
 

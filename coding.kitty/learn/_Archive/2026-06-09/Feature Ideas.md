@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Feature Ideas"
 tags: [coding-kitty-learn, features, product]
 type: idea-list
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Infrastructure and Deployment Module"
 tags: [coding-kitty-learn, curriculum, infrastructure, deployment]
 type: curriculum
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

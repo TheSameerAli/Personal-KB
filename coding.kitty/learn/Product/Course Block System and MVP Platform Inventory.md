@@ -2,11 +2,21 @@
 title: "coding.kitty/learn - Course Block System and MVP Platform Inventory"
 tags: [coding-kitty-learn, course-blocks, mvp, platform, curriculum]
 type: product-plan
-status: draft
+status: active
 date: 2026-06-09
 ---
 
 # Course Block System and MVP Platform Inventory
+
+## How To Use This Note
+
+Use this as the deep implementation inventory for the course-block system.
+
+Start with [[coding.kitty/learn/Product/Product Brief|Product Brief]] for product scope and [[coding.kitty/learn/Curriculum/Curriculum Plan|Curriculum Plan]] for the learning model. Return here when deciding what blocks, routes, prompts, checklists, and platform components the MVP needs.
+
+## Key Takeaway
+
+The MVP should behave like a guided course assembler, not an open-ended AI course generator. The first useful version needs a small curated library, deterministic archetype paths, and AI personalization around learner context.
 
 ## Purpose
 
@@ -825,4 +835,3 @@ The first version should prove three things:
 1. A learner can describe an idea and receive a useful path.
 2. The path can be assembled from reusable blocks.
 3. The learner can use the path to build, understand, checkpoint, and deploy a real first project.
-

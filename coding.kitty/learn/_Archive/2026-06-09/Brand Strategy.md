@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Brand Strategy"
 tags: [coding-kitty-learn, brand, strategy]
 type: strategy
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

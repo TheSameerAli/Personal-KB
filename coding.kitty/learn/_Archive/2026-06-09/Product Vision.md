@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Product Vision"
 tags: [coding-kitty-learn, product, vision]
 type: product-strategy
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

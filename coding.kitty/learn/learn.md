@@ -2,64 +2,32 @@
 title: "coding.kitty/learn"
 tags: [coding-kitty, coding-kitty-learn, product, education, ai-coding]
 type: project-space
-status: shaping
-date: 2026-06-08
+status: active
+date: 2026-06-09
 ---
 
 # coding.kitty/learn
 
-coding.kitty/learn is the independent planning space for the Coding Kitty education platform idea.
+coding.kitty/learn is the planning space for the Coding Kitty education platform.
 
-## Core Thesis
+## Start Here
 
-coding.kitty/learn teaches non-technical people how to become AI-assisted software builders: not by becoming traditional programmers first, but by learning enough software thinking to guide agentic coding tools, understand what they produce, fix issues, use version control, understand infrastructure, deploy real apps, and keep improving them.
+1. [[coding.kitty/learn/00 - Overview|Executive Brief]]
+2. [[coding.kitty/learn/Product/Product Brief|Product Brief]]
+3. [[coding.kitty/learn/Product/Idea-to-Course Engine|Idea-to-Course Engine]]
+4. [[coding.kitty/learn/Curriculum/Curriculum Plan|Curriculum Plan]]
+5. [[coding.kitty/learn/Strategy/Product-Market Fit|Product-Market Fit]]
+6. [[coding.kitty/learn/Operations/Roadmap|Roadmap]]
 
-Vibe coding is the cultural hook. The durable product is software creation literacy for the AI age.
+## Current Thesis
 
-Updated USP:
+coding.kitty/learn teaches non-technical people to become AI-assisted software builders.
+
+The hook is vibe coding. The durable product is software creation literacy for the AI age: prompting, software concepts, version control, deployment, debugging, and judgment.
+
+Core USP:
 
 > The learner's app idea becomes the course.
-
-coding.kitty/learn should ask what the learner wants to build, diagnose the project shape, recommend a route, and assemble a guided AI-building course from trusted lessons, prompts, checkpoints, and deployment steps.
-
-## Key Notes
-
-### Product
-
-- [[00 - Overview|Overview]]
-- [[Product/Product Vision|Product Vision]]
-- [[Product/Idea-to-Course Engine|Idea-to-Course Engine]]
-- [[Product/MVP Scope|MVP Scope]]
-- [[Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]]
-- [[Product/Platform Experience|Platform Experience]]
-- [[Product/Feature Ideas|Feature Ideas]]
-
-### Curriculum
-
-- [[Curriculum/Learning Path|Learning Path]]
-- [[Curriculum/Project Tracks|Project Tracks]]
-- [[Curriculum/Version Control Module|Version Control Module]]
-- [[Curriculum/Infrastructure and Deployment Module|Infrastructure and Deployment Module]]
-
-### Research
-
-- [[Research/Market Research|Market Research]]
-- [[Research/Competitor Landscape|Competitor Landscape]]
-- [[Research/Target Learners|Target Learners]]
-
-### Strategy
-
-- [[Strategy/Business Plan|Business Plan]]
-- [[Strategy/Monetization Strategy|Monetization Strategy]]
-- [[Strategy/Marketing Strategy|Marketing Strategy]]
-- [[Strategy/Brand Strategy|Brand Strategy]]
-- [[Strategy/Product-Market Fit|Product-Market Fit]]
-
-### Operations
-
-- [[Operations/Roadmap|Roadmap]]
-- [[Operations/Open Questions|Open Questions]]
-- [[Operations/Decision Log|Decision Log]]
 
 ## Current Priority
 
@@ -67,12 +35,48 @@ Define the first complete MVP learning experience:
 
 > Turn your app idea into a guided AI-building course.
 
-The MVP should prove that learners can describe an idea, receive a credible personalized path, and move from idea to shipped project using AI-guided development, with enough grounding in code, version control, and deployment to stay in control.
+The first version should prove that a learner can describe an idea, receive a credible path, and move from idea to shipped project using AI-guided development while learning enough code, Git, and deployment basics to stay in control.
 
-The first version should stay constrained to a small set of supported archetypes, likely:
+## Active Working Notes
 
-- personal website
-- simple productivity app
-- content/blog app
-- simple dashboard
-- lightweight AI wrapper
+### Product
+
+- [[coding.kitty/learn/Product/Product Brief|Product Brief]]
+- [[coding.kitty/learn/Product/Idea-to-Course Engine|Idea-to-Course Engine]]
+- [[coding.kitty/learn/Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]]
+
+### Curriculum
+
+- [[coding.kitty/learn/Curriculum/Curriculum Plan|Curriculum Plan]]
+
+### Research
+
+- [[coding.kitty/learn/Research/Market Research|Market Research]]
+- [[coding.kitty/learn/Research/Competitor Landscape|Competitor Landscape]]
+
+### Strategy
+
+- [[coding.kitty/learn/Strategy/Product-Market Fit|Product-Market Fit]]
+- [[coding.kitty/learn/Strategy/Business and GTM|Business and GTM]]
+
+### Operations
+
+- [[coding.kitty/learn/Operations/Roadmap|Roadmap]]
+- [[coding.kitty/learn/Operations/Open Questions|Open Questions]]
+- [[coding.kitty/learn/Operations/Decision Log|Decision Log]]
+
+## Decision Snapshot
+
+- Audience: non-technical creators, students, founders, operators, and professionals who want to build useful software with AI.
+- Product shape: AI Builder Learning Platform, not a generic course catalog.
+- MVP wedge: idea intake plus a guided course map for constrained project archetypes.
+- First archetypes: personal website, simple productivity app, content/blog app, simple dashboard, lightweight AI wrapper.
+- Teaching model: curated blocks assembled and personalized by AI.
+- Tool posture: tool-agnostic concepts with a few beginner-friendly recipes.
+- Business model: freemium path, paid deeper paths, sponsor-supported labs later.
+
+## Parking Lot
+
+Superseded fragments were moved out of the active working set:
+
+- [[coding.kitty/learn/_Archive/2026-06-09/README|2026-06-09 Archive]]

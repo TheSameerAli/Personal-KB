@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Version Control Module"
 tags: [coding-kitty-learn, curriculum, git, github, version-control]
 type: curriculum
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

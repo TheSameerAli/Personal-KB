@@ -9,6 +9,16 @@ last_researched: 2026-06-08
 
 # Competitor Landscape
 
+## How To Use This Note
+
+Use this as the detailed competitor reference.
+
+For the decision layer, start with [[coding.kitty/learn/Strategy/Product-Market Fit|Product-Market Fit]]. Return here when comparing course platforms, AI app builders, AI IDEs, no-code tools, AI course generators, and creator-led education.
+
+## Key Takeaway
+
+coding.kitty/learn should not compete by being the best AI coding tool or the broadest course catalog. It should compete by being the friendliest structured path from learner idea to shipped software, with judgment and deployment built in.
+
 ## Competitive Frame
 
 coding.kitty/learn's competitors are not only other courses. They include:

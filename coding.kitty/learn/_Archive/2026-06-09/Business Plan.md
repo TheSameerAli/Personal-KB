@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Business Plan"
 tags: [coding-kitty-learn, business-plan, strategy]
 type: strategy
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

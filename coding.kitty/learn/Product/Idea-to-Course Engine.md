@@ -2,11 +2,21 @@
 title: "coding.kitty/learn — Idea-to-Course Engine"
 tags: [coding-kitty-learn, product, ai-first-learning, personalization, usp]
 type: product-strategy
-status: draft
+status: active
 date: 2026-06-08
 ---
 
 # Idea-to-Course Engine
+
+## How To Use This Note
+
+Use this as the core product concept note for the personalized-course engine.
+
+For the short version, read [[coding.kitty/learn/Product/Product Brief|Product Brief]]. For implementation inventory, read [[coding.kitty/learn/Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]].
+
+## Key Takeaway
+
+The platform should start with the learner's idea, map it to a supported archetype, then assemble a course from trusted blocks. AI personalizes the route, prompts, and examples; it should not invent the entire curriculum from scratch.
 
 ## Core Idea
 
@@ -270,4 +280,3 @@ This gives the experience of personalization without relying on fully unbounded 
 The platform wins if learners say:
 
 > I did not just watch a course. I built my idea, and now I understand what the AI helped me do.
-

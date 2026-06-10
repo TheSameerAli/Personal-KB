@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Project Tracks"
 tags: [coding-kitty-learn, curriculum, projects]
 type: curriculum
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

@@ -9,6 +9,16 @@ last_researched: 2026-06-08
 
 # Market Research
 
+## How To Use This Note
+
+Use this as the raw market evidence library.
+
+For decisions, start with [[coding.kitty/learn/00 - Overview|Executive Brief]] and [[coding.kitty/learn/Strategy/Product-Market Fit|Product-Market Fit]]. Return here when you need sources, market structure, demand signals, risks, or source links.
+
+## Key Takeaway
+
+The market has plenty of AI tools and courses. The gap is a trusted, beginner-safe build companion that connects prompting, software fundamentals, version control, deployment, debugging, and project confidence.
+
 ## Executive Summary
 
 coding.kitty/learn sits in a fast-growing but unsettled market: AI-assisted software creation for people who are not traditional programmers.

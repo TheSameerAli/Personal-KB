@@ -8,6 +8,24 @@ date: 2026-06-08
 
 # Decision Log
 
+## 2026-06-09
+
+Decision:
+
+- `learn.md` is the front door for the project space.
+- `00 - Overview.md` is now a short executive brief, not a full dumping ground.
+- Product notes are consolidated into [[coding.kitty/learn/Product/Product Brief|Product Brief]], [[coding.kitty/learn/Product/Idea-to-Course Engine|Idea-to-Course Engine]], and [[coding.kitty/learn/Product/Course Block System and MVP Platform Inventory|Course Block System and MVP Platform Inventory]].
+- Curriculum notes are consolidated into [[coding.kitty/learn/Curriculum/Curriculum Plan|Curriculum Plan]].
+- Business, monetization, marketing, and brand notes are consolidated into [[coding.kitty/learn/Strategy/Business and GTM|Business and GTM]].
+- Market and competitor research remain as long-form source libraries with short navigation sections at the top.
+- Superseded fragments are archived in [[coding.kitty/learn/_Archive/2026-06-09/README|2026-06-09 Archive]] instead of being permanently deleted.
+
+Rationale:
+
+- The active working set should be small enough to navigate quickly.
+- Long research should remain available, but it should not be the first thing someone has to parse.
+- Archiving preserves source thinking while removing duplicated notes from day-to-day planning.
+
 ## 2026-06-08
 
 Decision:

@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Marketing Strategy"
 tags: [coding-kitty-learn, marketing, strategy]
 type: strategy
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

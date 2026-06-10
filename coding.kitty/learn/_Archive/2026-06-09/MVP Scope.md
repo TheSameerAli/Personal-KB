@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — MVP Scope"
 tags: [coding-kitty-learn, mvp, product]
 type: product-plan
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

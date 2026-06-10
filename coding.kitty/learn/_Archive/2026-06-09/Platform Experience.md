@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Platform Experience"
 tags: [coding-kitty-learn, platform, ux, product]
 type: product-design
-status: draft
+status: archived
 date: 2026-06-08
 ---
 

@@ -2,7 +2,7 @@
 title: "coding.kitty/learn — Monetization Strategy"
 tags: [coding-kitty-learn, monetization, strategy]
 type: strategy
-status: draft
+status: archived
 date: 2026-06-08
 ---
 
