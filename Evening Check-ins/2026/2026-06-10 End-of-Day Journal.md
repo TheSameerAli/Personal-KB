@@ -33,7 +33,7 @@ tags:
 - **Temporal** — Kristin confirmed Tom loves the video (no changes needed). A payment from Temporal is on the way via BILL.com.
 - **Binalyze** — Katharine accepted the meeting for Thu 18 Jun 10:30–11:00 BST.
 - **New opportunities** to review: Paid collab from Verdent AI (Tec-Do agency, two emails), Miles AI running coach, Video Studio workspace, Qwen Cloud AI Hackathon sponsorship, Meta Creator Fast Track, and GitHub Roadmap Webinar (registered for 18 Jun).
-- **Kiro briefing** — You attended; no follow-up tasks surfaced in the data.
+- **Kiro briefing** — You attended; detailed notes and follow-ups are captured in [[kiro-embargoed-briefing-slot-1-2026-06-10]].
 
 **🧰 Coverage Gaps / Tools to Add**
 - Chat conversations and ad-hoc assistant work (Telegram/Discord/Hermes) are not yet captured. Adding a session/platform activity source would make future briefings more complete.
